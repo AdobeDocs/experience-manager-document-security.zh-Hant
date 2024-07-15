@@ -1,13 +1,13 @@
 ---
-source-git-commit: 3687bd5e276bd3445d12fb19d911f6a9ded1077d
-workflow-type: ht
-source-wordcount: '538'
-ht-degree: 100%
+source-git-commit: 8a10fb9fa24409b695fdaf1431228c6281bf78c3
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 96%
 
 ---
 # Microsoft Office 適用的 AEM Document Security Extension 文件投稿
 
-感謝您選擇 Microsoft Office 適用的 AEM Document Security Extension 文件投稿！我們樂於接受來自整個讀者社群以及 Adobe 員工的內容貢獻。
+感謝您選擇 Microsoft Office 適用的 AEM Document Security Extension 文件投稿！Adobe歡迎整個讀者社群以及Adobe員工貢獻內容。
 
 本檔案說明您應如何提供內容，並指出在提供內容時應遵循的指南。
 
@@ -17,11 +17,11 @@ ht-degree: 100%
 
 ## 協助撰寫指南
 
-雖然我們樂於接受任何改善 AEM 說明文件的貢獻，但仍需要求其內容應盡可能遵守特定準則和標準。請參閱 [AEM 說明文件協助撰寫指南](guidelines.md)取得詳細資訊。
+雖然 Adobe 樂於接受任何改善 AEM 說明文件的貢獻，但請務必注意內容應盡可能遵守特定準則和標準。參閱 [AEM 說明文件協助撰寫指南](guidelines.md)取得詳細資訊。
 
 ## 如何協助撰寫
 
-我們希望為您提供易於協助撰寫的方式。您可以透過兩種方式協助撰寫：
+Adobe 希望為您提供易於協助撰寫的方式。您可以透過兩種方式協助撰寫：
 
 * [建立問題](#create-an-issue)
 * [建立提取請求](#create-a-pull-request)
@@ -34,15 +34,15 @@ ht-degree: 100%
 
 ### 建立問題 {#create-an-issue}
 
-您是否對目前的文件有建議或觀察發現，或是想針對描述內容的方式提出疑問？如果符合上述情況，請建立問題。如果您希望貢獻內容，但不願意編輯文件或自行提出提取請求，也可以建立問題。
+您是否對目前的文件有建議或觀察發現，或是想針對描述內容的方式提出疑問？如果符合上述情況，可建立問題。如果您希望貢獻內容，但不願意編輯文件或自行提出提取請求，也可以建立問題。
 
-您可以透過建立問題輕鬆描述改善文件的想法，並提供給 AEM Docs 團隊成員審核。只需按一下導覽面板頂端的&#x200B;**「記錄問題」**&#x200B;連結，即可在任何頁面建立問題。
+您可以透過建立問題輕鬆說明改善文件的想法，並提供給 AEM Docs 團隊成員進行審核。在任何頁面旳右側導覽面板上方，按一下&#x200B;**「記錄問題」**&#x200B;連結以建立問題。
 
 ### 建立提取請求 {#create-a-pull-request}
 
-如果您發現問題，並清楚知道應如何修正，可以考慮建立提取請求。提取請求可讓您自行編輯說明文件，然後由 AEM Docs 團隊成員審核並納入。只需按一下導覽面板頂端的&#x200B;**「編輯此頁面」**&#x200B;連結，即可在任何頁面進行您建議的變更，並建立提取請求。
+如果您發現問題，並清楚知道應如何修正，可以考慮建立提取請求。提取請求可讓您自行編輯說明文件。AEM Docs 團隊成員會審核並納入。可在任何頁面的右側導覽面板上方，按一下&#x200B;**「編輯此頁面」**，以進行您建議的變更並建立提取請求。
 
-所有提取請求都必須簽署並附上[貢獻者授權合約 (CLA)。](https://opensource.adobe.com/cla.html)這可授予 Adobe 在專案中重新使用您稿件的權限。您只需要提交 Adobe CLA 一次，因此如果您之前已送出 CLA，即可立即開始投稿！
+所有提取請求都必須附上簽名的[貢獻者授權合約或 CLA](https://opensource.adobe.com/cla.html)。CLA 授予 Adobe 在專案中重新使用您稿件的權限。您只需要提交 Adobe CLA 一次，因此如果您之前已送出 CLA，即可立即開始投稿！
 
 ### 快速簡介影片
 
@@ -54,8 +54,8 @@ ht-degree: 100%
 
 如果您是 Adobe 員工且想要協助撰寫，請使用企業 Git 中的`AdobeDocs`組織。
 
-當然，我們都相當樂見以任何形式協助撰寫，並且將審核您提交至公開存放庫的貢獻。不過，來自 Adobe 員工的提取請求更加易於處理，並且在企業存放庫中可以更快獲得核准。請務必避免於企業存放庫之外談論任何所有權的相關資訊。
+Adobe 十分樂見以任何形式協助撰寫，並且將審查您提交至公開存放庫的貢獻內容。不過，來自 Adobe 員工的提取請求更容易處理，並且可在企業存放庫中更快獲得核准。請務必避免於企業存放庫之外談論任何所有權的相關資訊。
 
 ## 更多資訊
 
-如需 GitHub 製作平台使用方式的詳細資訊，請參閱 [Adobe 文件貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+如需 GitHub 編寫平台使用方式的詳細資訊，可參閱 [Adobe 文件貢獻者指南](https://experienceleague.adobe.com/zh-hant/docs/contributor/contributor-guide/introduction)。
