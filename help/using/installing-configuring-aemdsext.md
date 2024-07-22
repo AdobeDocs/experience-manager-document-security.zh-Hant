@@ -6,26 +6,26 @@ content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
+source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
 workflow-type: tm+mt
-source-wordcount: '2775'
-ht-degree: 100%
+source-wordcount: '2821'
+ht-degree: 66%
 
 ---
 
 # 安裝和設定 Microsoft Office 適用的 AEM Document Security Extension{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
-此文件會指引您安裝和設定 Microsoft Office 適用的 Adobe Experience Manager Document Security Extension。
+本檔案將指導您安裝和設定Microsoft Office適用的Adobe Experience Manager Document Security Extension。
 
 本文件包含有關以下工作的資訊：
 
-* 安裝 Microsoft Office 適用的 Document Security Extension
+* 安裝Microsoft Office適用的Document Security Extension。
 * 將安裝程式預先設定為指向安裝 LiveCycle Rights Management ES2 或以上版本，以及 AEM 6.0 Forms 或以上版的 Document Security 附加元件。
-* 設定自動套用預設原則
+* 設定自動套用預設原則。
 
 ## 安裝之前 {#before-you-install}
 
-在安裝 Microsoft Office 適用的 Document Security Extension 以前，請確保：
+在安裝Microsoft Office適用的Document Security Extension以前，請確保：
 
 * 您已閱讀 [版本注意事項](document-security-extension-release-notes.md)。
 * Microsoft Office 已啟用。開啟 Microsoft Office 應用程式時不會出現啟用對話框。
@@ -39,11 +39,11 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->支援在 64 位元作業系統上安裝 32 位元版的 Document Security，但反之則不支援。您無法在 32 位元作業系統上安裝 Microsoft Office 適用的 64 位元版本 Document Security。
+>支援在64位元作業系統上安裝32位元版本的Document Security Extension，但反之則不支援。 您無法在32位元作業系統上安裝Microsoft Office適用的64位元版本Document Security Extension。
 
-### 停用 McAfee VirusScan&amp; {#disable-mcafee-virusscan}
+### 停用McAfee VirusScan {#disable-mcafee-virusscan}
 
-若電腦有已安裝的 Document Security Extension，並有已啟用即時 (On-Access) 掃描的 McAfee VirusScan，為了確保此電腦能順利啟動 Office 應用程式，請停用 McAfee VirusScan 控制台中的「緩衝區溢位保護」選項。
+停用McAfee VirusScan主控台中的「緩衝區溢位保護」選項。 這麼做可確保Office應用程式在已安裝Document Security Extension的電腦上順利啟動。 而且，已啟用McAfee VirusScan （具有存取時掃描）。 這些調整有助於防止任何可能阻礙啟動程式的衝突。
 
 ### 解除安裝協力廠商外掛程式 {#uninstall-third-party-plug-ins}
 
@@ -58,7 +58,7 @@ Microsoft Office 適用的 AEM Document Security Extension 不支援 Microsoft O
 * 32 位元或 64 位元版的 Microsoft Windows 7 或 Windows 10 - 英文版、法文版、德文版、日文版、義大利文版、西班牙文版、葡萄牙文 (巴西) 版、韓文版、簡體中文版和繁體中文版。
   **注意：***Microsoft Office 適用的 Document Security Extension 也預計可在 Microsoft Surface 裝置上使用。*
 
-* 32 位元或 64 位元版的 Microsoft Office 2013、2016、2019 和安裝為 Office 365 一部分的 Microsoft Office 桌面應用程式 - 英文版、法文版、德文版、日文版、義大利文版、西班牙文版、葡萄牙文 (巴西) 版、韓文版、簡體中文版和繁體中文版。
+* 32位元或64位元版的Office 2013、2016、2019以及安裝為Office 365一部分的Microsoft Office案頭應用程式：英文、法文、德文、日文、義大利文、西班牙文、巴西葡萄牙文、韓文、簡體中文或繁體中文。
 
   **注意**：*Microsoft Office 適用的 AEM Document Security Extension 不支援 Microsoft Office 應用程式適用的協力廠商外掛程式。由於此擴充功能與協力廠商外掛程式可能有衝突，在安裝 Microsoft Office 適用的 Document Security Extension 以前，必須先解除安裝 Microsoft Office 塵用程式適用的非 Adobe 外掛程式。Adobe 不支援已安裝協力廠商外掛程式的 Microsoft Office 適用的 Document Security Extension。*
 
@@ -74,11 +74,11 @@ Microsoft Office 適用的 AEM Document Security Extension 不支援 Microsoft O
 
 您可以從[下載頁面](download-installer.md)下載安裝程式。您不能直接自訂安裝程式可執行的檔案，但可以互動方式或無訊息模式安裝。若要安裝該軟體，請以管理員身份登入 Windows。
 
-32 位元和 64 位元版的 Microsoft Office 有不同的安裝程式可用。若是 32 位元版的 Microsoft Office，可下載 DocumentSecurityExtensionforMicrosoftOffice.exe。若是 64 位元版的 Microsoft Office，可下載 DocumentSecurityExtensionforMicrosoftOffice64.exe。
+32 位元和 64 位元版的 Microsoft Office 有不同的安裝程式可用。若是32位元版本的Microsoft Office，請下載DocumentSecurityExtensionforMicrosoftOffice.exe。 若是64位元版本的Microsoft Office，請下載DocumentSecurityExtensionforMicrosoftOffice64.exe。
 
 >[!NOTE]
 >
->本文件是使用 32 位元安裝程式檔案 (DocumentSecurityExtensionforMicrosoftOffice.exe) 來說明不同命令和選項。如果您是使用 64 位元版 Microsoft Office，請使用 64 位元安裝程式檔案 (DocumentSecurityExtensionforMicrosoftOffice64.exe) 來執行本文件所列的操作。
+>本檔案使用32位元安裝程式檔案(DocumentSecurityExtensionforMicrosoftOffice.exe)來說明各種命令和選項。 如果您使用64位元版本的Microsoft Office，請使用64位元安裝程式檔案(DocumentSecurityExtensionforMicrosoftOffice64.exe)來執行本檔案所列的作業。
 
 ### 以無訊息模式安裝 {#install-in-silent-mode}
 
@@ -98,17 +98,17 @@ Microsoft Office 適用的 AEM Document Security Extension 不支援 Microsoft O
 
 ## 將安裝程式預先設定為連線至 Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
 
-您可以將 Microsoft Office 安裝程式適用的 Document Security Extension 預先設定為指向 LiveCycle 或 AEM 伺服器，以便 Microsoft Office 適用的 Document Security Extension 安裝用戶可以使用功能而無需設定連線。這樣，用戶無需任何設定即可開啟受保護的文件。但是，除非用戶將客戶端設定為使用特定伺服器，否則他們無法保護新文件。
+您可以將Microsoft Office安裝程式適用的Document Security Extension預先設定為指向LiveCycle或AEM伺服器。 這麼做可確保安裝Microsoft Office適用的Document Security Extension的使用者可以使用功能，而不需要設定連線。 這樣，用戶無需任何設定即可開啟受保護的文件。但是，除非用戶將客戶端設定為使用特定伺服器，否則他們無法保護新文件。
 
-下列步驟說明如何建立和設定 MSI 檔案。本 MSI 檔案含有將「Microsoft Office 安裝程式適用的 Document Security Extension」預先設定為 LiveCycle 或 AEM 伺服器 (即安裝在您的企業中) 所需的登錄值。
+下列步驟說明如何建立和設定 MSI 檔案。此MSI檔案包含登入值。 這些值是將Microsoft Office安裝程式適用的Document Security Extension預先設定為安裝在您企業中的LiveCycle或AEM伺服器所必需的。
 
 ### 自訂安裝程式的先決條件 {#prerequisites-for-customizing-the-installer}
 
-使用 Orca 資料庫編輯器來自訂安裝程式。下列步驟說明如何使用 Orca 資料庫編輯器來修改 MSI 安裝檔案，進而建立自訂的 MSI 檔案。Orca 做為 Windows Server 2008 和 .NET Framework 3.5 之 Windows SDK 的一部分提供。
+使用 Orca 資料庫編輯器來自訂安裝程式。下列步驟說明如何使用 Orca 資料庫編輯器來修改 MSI 安裝檔案，進而建立自訂的 MSI 檔案。Orca是Windows Server 2008和.NET Framework 3.5之Windows SDK的一部分。
 
 <!--
 
-For more information about how to edit Microsoft Windows® Installer files using Orca, see [Microsoft Support](http://support.microsoft.com/kb/255905/EN-US/).
+For more information about how to edit Microsoft Windows&reg; Installer files using Orca, see [Microsoft Support](http://support.microsoft.com/kb/255905/EN-US/).
 
 -->
 
@@ -146,7 +146,7 @@ For more information about how to edit Microsoft Windows® Installer files using
   </tr>
   <tr>
    <td><p><code>APS_SERVER_NAME</code></p> </td>
-   <td><p>顯示名稱</p> </td>
+   <td><p>顯示您的名稱。</p> </td>
    <td><p>預設伺服器</p> </td>
   </tr>
   <tr>
@@ -173,22 +173,22 @@ For more information about how to edit Microsoft Windows® Installer files using
 
 ## 設定自動套用預設原則 {#configuring-automatic-application-of-a-default-policy}
 
-在設定過程中，您可以設定自動套用預設原則，這樣 Microsoft Office 適用的 Document Security Extension 便會保護每個已儲存的文件。
+在設定過程中，您可以設定自動套用預設原則，這樣Microsoft Office適用的Document Security Extension就會保護每個已儲存的檔案。
 
 您可以指定下列其中一個選項：
 
 * 使用預設原則保護所有文件。
-* 當用戶無法連線到伺服器時，允許用戶選擇以不受保護的格式儲存檔案。這種靈活性可讓您解決用戶在無法連線到網絡 (例如在飛機上) 時建立文件的情況。
+* 讓使用者在無法連線至伺服器時，選擇以無保護格式儲存檔案。 這種靈活性可讓您解決用戶在無法連線到網絡 (例如在飛機上) 時建立文件的情況。
 
 在啟用自動套用原則功能後，若有以下情況時，可以預設原則來保護文件：
 
-* 用戶編輯和儲存新建立的文件
-* 用戶編輯和儲存未受保護的文件
-* 用戶開啟以預設文件開啟的應用程式，進行編輯後儲存該文件
+* 使用者編輯並儲存新建立的檔案
+* 使用者編輯並儲存未受保護的檔案
+* 使用者開啟以預設檔案開啟的應用程式，編輯並儲存檔案
 
-### 在 MSI 檔案中設定自動套用原則功能  {#configure-the-auto-apply-policy-feature-in-the-msi-file}
+### 在MSI檔案中設定自動套用原則功能 {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
-在開始之前，請將安裝程式預先設定為指向您的 LiveCycle 或 AEM Forms 伺服器 (如本文前面所述)。
+在開始之前，請將安裝程式預先設定為指向您的LiveCycle或AEM Forms伺服器，如本文前面所述。
 
 1. 按一下「**[!UICONTROL 開啟 > 程式 > Orca]**」。
 
@@ -212,7 +212,7 @@ For more information about how to edit Microsoft Windows® Installer files using
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
-   <td><p>儲存新文件時要使用的原則 GUID。套用至自動套用原則功能。</p> </td>
+   <td><p>原則是在儲存新檔案時使用的GUID。 此值適用於「自動套用」原則功能。</p> </td>
    <td><p>在 RM 伺服器所見的十六進位原則 ID</p> </td>
   </tr>
   <tr>
@@ -235,7 +235,7 @@ For more information about how to edit Microsoft Windows® Installer files using
 
 >[!NOTE]
 >
->當您要提醒客戶保護所有文件但不強迫他們這樣做時，`AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE` 選項很有用。當您知道用戶在無法連線網絡下建立文件時，這個選項也很有用。您不想阻止他們建立和儲存文件。
+>當您要提醒客戶保護所有檔案但不強迫他們這樣做時，`AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE`選項很有用。 當您知道用戶在無法連線網絡下建立文件時，這個選項也很有用。您不想阻止他們建立和儲存文件。
 
 1. 將修改後的檔案儲存到含有原始 MSI 檔案的同一個目錄中。
 
@@ -245,35 +245,35 @@ For more information about how to edit Microsoft Windows® Installer files using
 
 ## 啟用自動保護新文件 {#enabling-automatic-protection-of-new-documents}
 
-管理員可以啟用自動保護用戶所儲存的任何文件的功能。在 Microsoft Office 適用的 Document Security Extension 的安裝程式中，管理員可設定自動套用原則功能。
+管理員可以啟用自動保護使用者儲存的任何檔案的功能。 在 Microsoft Office 適用的 Document Security Extension 的安裝程式中，管理員可設定自動套用原則功能。
 
-如果啟用了「自動套用原則」，則用戶儲存的所有文件都將受到預設原則的保護。此操作適用於以下情況：
+如果啟用自動套用原則，則使用者儲存的所有檔案都將受到預設原則的保護。 此操作適用於以下情況：
 
 * 當用戶建立新文件時，可編輯並儲存文件。
 * 當用戶開啟未受保護文件時，可編輯並儲存文件。
 
-若要了解設定自動套用原則的資訊，請參閱 [設定自動套用預設原則](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p)。
+如需設定自動套用原則的資訊，請參閱[設定自動套用預設原則](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p)。
 
 ## 啟用較少功能區的用戶介面 {#enable-ribbon-less-user-interface}
 
-您可以修改 Windows 登錄設定，進而啟用/停用較少功能區的用戶介面。執行以下步驟來更新登錄，並啟用較少功能區的用戶介面：
+您可以修改Windows登入中的設定，來啟用/停用較少功能區的使用者介面。 執行以下步驟來更新登入，並啟用較少功能區的使用者介面：
 
-1. 在進行變更前，請備份 Windows 登錄。若需要詳細的說明，請參閱 [如何修改 Windows 登錄](https://support.microsoft.com/en-us/kb/136393)。
+1. 在進行變更之前，請先備份Windows登入。 若需要詳細的說明，請參閱 [如何修改 Windows 登錄](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)。
 1. 在登錄編輯程式內，瀏覽至 HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 or HKEY_LOCAL_MACHINE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0
 1. 建立名稱為 **HidePluginUI** 的新 Dword (32 位元) 值。
 
-1. 將 **HidePluginUI** 屬性的值設定為 1，以啟用較少功能區的用戶介面。
+1. 將&#x200B;**HidePluginUI**&#x200B;屬性的值設定為1，以啟用較少功能區的使用者介面。
 
 1. 關閉登錄編輯程式。
 
 ## 啟用浮水印，以便在 Microsoft Excel 中列印 {#enable-watermark-for-printing-in-microsoft-excel}
 
-您可以變更 Windows 登錄設定，使動態浮水印與現有的頁首頁尾同時存在。登錄設定可讓浮水印只適用於列印期間。執行以下步驟來更新登錄，並在列印期間啟用浮水印：
+您可以變更Windows登入設定，讓動態浮水印與現有的頁首及頁尾並存。 登錄設定可讓浮水印只適用於列印期間。執行以下步驟來更新登入，並在列印期間啟用浮水印：
 
-1. 在進行變更前，請備份 Windows 登錄。若需要詳細的說明，請參閱 [如何修改 Windows 登錄](https://support.microsoft.com/en-us/kb/136393)。
+1. 在進行變更之前，請先備份Windows登入。 若需要詳細的說明，請參閱 [如何修改 Windows 登錄](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)。
 1. 在登錄編輯程式內，瀏覽至 HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 or HKEY_LOCAL_MACHINE\WOW6432NODE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0
 1. 建立新的登錄機碼 **WatermarkMode**。
-1. 在 WatermarkMode 登錄機碼中，建立 DWORD **WatermarkMode**，並將 DWORD **WatermarkMode** 值設定為 **1**。
+1. 在WatermarkMode登入機碼中，建立DWORD **WatermarkMode**，並將DWORD **WatermarkMode**&#x200B;的值設定為&#x200B;**1**。
 
 1. 關閉登錄編輯程式。
 
@@ -283,11 +283,11 @@ For more information about how to edit Microsoft Windows® Installer files using
 
 ## 新增自訂封面頁至文件 {#coverpage}
 
-用戶可以嘗試在未安裝 Microsoft Office 適用 AEM Document Security 外掛程式的電腦上開啟受保護的文件。這類電腦無法開啟文件。在這類電腦上，您可以顯示一個封面頁，內容含下載 Microsoft Office 適用 AEM Document Security 外掛程式的說明和其他資訊。
+使用者可以嘗試在未安裝Microsoft Office適用的AEM Document Security外掛程式的電腦上開啟受保護的檔案。 這類電腦無法開啟文件。在這類電腦上，您可以顯示一個封面頁，內容含下載 Microsoft Office 適用 AEM Document Security 外掛程式的說明和其他資訊。
 
 ### 在您設定封面頁以前 {#before-you-configure-a-cover-page}
 
-* 進行 CommonResources.dll 檔案備份。預設路徑為：
+* 備份CommonResources.dll檔案。 預設路徑為：
 
    * **(適用於 32 位元電腦上的 32 位元 Office)** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
@@ -302,7 +302,7 @@ For more information about how to edit Microsoft Windows® Installer files using
 
 ### CommonResources.dll 檔案的結構 {#structure-of-the-commonresources-dll-file}
 
-CommonResources.dll 檔案含有關於資源範本的資訊。檔案含有兩個名稱識別碼：TEMPLATE_FILE 和 RT_MANIFEST。若要啟用自訂封面頁，要修改 TEMPLATE_FILE 名稱識別碼。TEMPLATE_FILE 名稱識別碼有六個資源：
+CommonResources.dll 檔案含有關於資源範本的資訊。它包含兩個名稱識別碼：TEMPLATE_FILE和RT_MANIFEST。 若要啟用自訂封面頁，要修改 TEMPLATE_FILE 名稱識別碼。TEMPLATE_FILE 名稱識別碼有六個資源：
 
 <table>
  <tbody>
@@ -343,7 +343,7 @@ CommonResources.dll 檔案含有關於資源範本的資訊。檔案含有兩個
 
    >[!NOTE]
    >
-   >如果該檔案未出現在「方案總管」視窗中，請使用「開啟檔案」選項重新開啟該檔案。選取以資源編輯器作為編輯器。
+   >如果檔案未出現在「方案總管」視窗中，請使用「開啟方式」選項重新開啟檔案。 選取以資源編輯器作為編輯器。
 
 1. 在「方案總管」視窗中，擴展 TEMPLATE_FILE 目錄，並刪除資源 101。
 
@@ -352,7 +352,7 @@ CommonResources.dll 檔案含有關於資源範本的資訊。檔案含有兩個
    1. 在「方案總管」中選取一個專案後，在「專案」功能表上，按一下「屬性」。
    1. 選取「資源」標籤。
    1. 在「資源設計工具」工具列上，指向「新增資源」，按一下箭頭。若是資源類型，選取 TEMPLATE_FILE，並按一下「匯入」。
-   1. 在「將現有的檔案加入資源」對話框中，瀏覽至 Resource.xlsx 檔案，然後按一下「開啟」。直接將該檔案新增至 TEMPLATE_FILE。
+   1. 在&#x200B;**`Add existing file to resources`**&#x200B;對話方塊中，瀏覽至Resource.xlsx檔案，然後按一下[開啟]。 直接將該檔案新增至 TEMPLATE_FILE。
 
    >[!NOTE]
    >
@@ -362,19 +362,19 @@ CommonResources.dll 檔案含有關於資源範本的資訊。檔案含有兩個
 
    >[!NOTE]
    >
-   >不要以隨機順序刪除和新增資源類型。在 101 以後，設定 102，依此類推。
+   >請勿刪除資源型別並以隨機順序新增。 在 101 以後，設定 102，依此類推。
 
-### 使用 Microsoft Office 適用 AEM Document Security Extension 的安裝程式，封裝自訂的 CommonResources.dll 檔案  {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
+### 使用 Microsoft Office 適用 AEM Document Security Extension 的安裝程式，封裝自訂的 CommonResources.dll 檔案 {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
 
-您可以自訂 CommonResources.dll 檔案，以包含新增自訂封面頁。在自訂檔案後，您可以手動方式在所有工作站上以自訂檔案取代原始檔案，也可以選擇自動方式來取代檔案。
+您可以自訂CommonResources.dll檔案以新增自訂封面頁。 在自訂檔案後，您可以手動方式在所有工作站上以自訂檔案取代原始檔案，也可以選擇自動方式來取代檔案。
 
-在大規模環境中，採用手動方式以自訂 `CommonResources.dll` 檔案取代預設 `CommonResources.dll file` 既困難又繁瑣。您可以使用自動解壓縮和封裝工具 (例如 WinZip 自動解壓縮程式)，封裝自訂的 CommonResources.dll 檔案與 Microsoft Office 適用的 AEM Document Security Extension。稍後，您可以將自訂安裝程式分發到所有工作站。此方式可以減少自訂檔案取代預設 `CommonResources.dll` 檔案所需的時間。此方式還可以確保所有工作站都具備必要的 CommonResources.dll 檔案。自動解壓縮和封裝工具只是自動代替檔案的多種可能方法之一。您可以選擇適合您環境的任何方法。
+在大型環境中，以自訂`CommonResources.dll`檔案手動取代預設`CommonResources.dll file`既困難又繁瑣。 您可以使用自動解壓縮和封裝工具 (例如 WinZip 自動解壓縮程式)，封裝自訂的 CommonResources.dll 檔案與 Microsoft Office 適用的 AEM Document Security Extension。稍後，您可以將自訂安裝程式分發到所有工作站。此方式可以減少自訂檔案取代預設 `CommonResources.dll` 檔案所需的時間。此方式還可以確保所有工作站都具備必要的 CommonResources.dll 檔案。自動解壓縮和封裝工具只是自動代替檔案的多種可能方法之一。您可以選擇適合您環境的任何方法。
 
 您可以執行以下步驟，透過 Microsoft Office 適用的 AEM Document Security Extension 安裝程式來封裝自訂 `CommonResources.dll` 檔案。
 
-1. 安裝自動解壓縮程式和封裝工具。例如，WinZip 自動解壓縮程式。
+1. 安裝自動解壓縮程式和封裝工具。例如，WinZip自動解壓縮程式。
 1. 建立新的檔案夾。例如，YOUR_FOLDER_NAME
-1. 將 AEM Document Security Extension 的原始安裝程式和自訂的 CommonResources.dll 檔案放在新建檔案夾。
+1. 將AEM Document Security Extension的原始安裝程式和自訂CommonResources.dll檔案放在新建立的資料夾中。
 1. 在檔案夾建立一個批次檔案。例如，YOUR_FOLDER_NAME\Installer.bat
 1. 開啟批次檔案進行編輯，並新增下列代碼至批次檔案：
 
@@ -409,15 +409,15 @@ CommonResources.dll 檔案含有關於資源範本的資訊。檔案含有兩個
     endlocal
    ```
 
-   如果要在 JEE 上使用 LiveCycle Rights Management ES4 和 11.0.0 版以外的任何其他版本 LiveCycle 或 AEM Forms，請以下列取代登錄機碼的路徑：
+   如果您在JEE上使用LiveCycle Rights Management ES4和版本11.0.0以外的任何其他版本LiveCycle或AEM Forms，請以下列方式取代登入機碼的路徑：
 
-   * (Livecycle Rights Management ES2 和 9.0 版)：*HKLM\SOFTWARE\Adobe/LiveCycle* *Rights Management ES2\9.0 *
-   * (Livecycle Rights Management ES3 和 10.0 版)
-   * (Livecycle Rights Management ES4 和 11.0 版) HKLM\SOFTWARE\Adobe\LiveCycle Rights Management ES4\11.0.0
-   * (JEE 和以上版本的 AEM 6.0 Forms) HKLM\SOFTWARE\Adobe\LiveCycle Rights Management ES4\11.0.0
+   * (LiveCycle®Rights ManagementES2和9.0版)： *HKLM\SOFTWARE\Adobe/LiveCycle* *Rights ManagementES2\9.0 *
+   * (LiveCycle®Rights ManagementES3和10.0版)
+   * (LiveCycle®Rights ManagementES4和11.0版) HKLM\SOFTWARE\Adobe\LiveCycle Rights Management ES4\11.0.0
+   * (JEE和更新版本上的AEM 6.0 Forms) HKLM\SOFTWARE\Adobe\LiveCycle Rights Management ES4\11.0.0
 
 1. 在上面程式碼中，以您在步驟 2 中建立的檔案夾名稱來取代 YOUR_FOLDER_NAME 的所有執行個體。
-1. **(限附有 .exe 副案名的 Microsoft Office 適用 AEM Document Security Extension 安裝程式)** 取代下列程式碼列：
+1. **(僅適用於Microsoft Office適用的AEM Document Security Extension安裝程式，副檔名為.exe)**&#x200B;取代下列程式碼列：
 
    `msiexec /i YOUR_FOLDER_NAME\MSI_NAME.msi`
 替換為
@@ -425,11 +425,15 @@ CommonResources.dll 檔案含有關於資源範本的資訊。檔案含有兩個
    `START /w YOUR_FOLDER_NAME\APPLICATION_NAME.exe`
 
 1. 儲存並關閉批次檔案。
-1. 使用自動解壓縮和封裝工具來封裝含有後述的檔案夾：自訂 CommonResources.dll 檔案、Microsoft Office 適用的 AEM Document Security Extension 原始安裝程式和批次檔案。
+1. 使用自動解壓縮和封裝工具，封裝包含下列專案的資料夾：
+
+   * 自訂CommonResources.dll檔案
+   * Microsoft Office適用的AEM Document Security Extension原始安裝程式
+   * 而且，批次檔案
 
    >[!NOTE]
    >
    >確保將自動解壓縮程式套件設定為以管理員身分來執行，以及
-   >完成解壓縮後自動執行批次檔案。
+   >完成解壓縮時執行批次檔案。
 
-現在，Microsoft Office 適用的 AEM Document Security Extension 的自動解壓縮安裝程式會封裝自訂 CommonResources.dll 檔案，並準備供分發。
+現在，適用於Microsoft Office的AEM Document Security Extension的自動解壓縮安裝程式會封裝自訂CommonResources.dll檔案，並準備供分發。

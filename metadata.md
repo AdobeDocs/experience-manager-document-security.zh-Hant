@@ -8,9 +8,9 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-document-security.zh-Hant
 index: true
 recommendations: noDisplay
-source-git-commit: 8b36d6dd8755d779c5e7f258df3ee2c68a5d1a5e
+source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '131'
 ht-degree: 100%
 
 ---
