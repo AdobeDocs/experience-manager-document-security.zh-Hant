@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
 source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6136'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -19,27 +19,27 @@ ht-degree: 70%
 
 您可以控制收件人如何使用受原則保護的檔案；無論檔案分發的範圍有多廣，您都可以控制。
 
-使用Microsoft® Office適用的Document Security Extension，您可以執行以下工作：
+使用 Microsoft® Office 適用的 Document Security Extension，您可執行這些工作：
 
 * 設定您與 Document Security 的連線
 * 套用原則至檔案中
-* 開啟Document Security網頁以建立和管理使用者原則
+* 開啟 Document Security 網頁，以建立和管理使用者原則
 * 從檔案中移除原則保護
 * 變更檔案已套用的原則
-* 開啟Document Security網頁以撤銷檔案的存取權或變更檔案的原則
-* 開啟Document Security網頁以檢視檔案的稽核歷史記錄
+* 開啟 Document Security 網頁，撤銷檔案的存取權限或變更檔案所用的原則
+* 開啟 Document Security 網頁，檢視檔案的稽核歷史記錄
 
 ### 連線至 Document Security 的伺服器 {#connect-to-a-document-security-server}
 
-如果您的目的是要套用原則至檔案中，您必須要設定 Document Security 的連線設定。根據Microsoft® Office適用的Document Security Extension安裝方式，您可能已有預設的連線設定。 您可以為一個或多個 Document Security 的執行個體新增連線設定。您可以向 Document Security 管理員取得伺服器資訊。
+如果您的目的是要套用原則至檔案中，您必須要設定 Document Security 的連線設定。根據 Microsoft® Office 適用的 Document Security Extension 安裝方式，您可能已有預設的連線設定。您可以為一個或多個 Document Security 的執行個體新增連線設定。您可以向 Document Security 管理員取得伺服器資訊。
 
-將要用來保護檔案或管理受保護檔案的伺服器設定為預設伺服器。當您將原則套用至新檔案或開啟Document Security網頁時，Microsoft® Office適用的Document Security Extension會連線至預設伺服器。 如果使用超過一個 Document Security 的執行個體，則伺服器之間切換時必須變更預設的伺服器設定。只要您獲得開啟檔案的授權，您就可以開啟任何受 Document Security 執行個體保護的檔案。
+將要用來保護檔案或管理受保護檔案的伺服器設定為預設伺服器。當您在新檔案中套用原則或開啟 Document Security 網頁時，Microsoft® Office 適用的 Document Security Extension 將連線至預設伺服器。如果使用超過一個 Document Security 的執行個體，則伺服器之間切換時必須變更預設的伺服器設定。只要您獲得開啟檔案的授權，您就可以開啟任何受 Document Security 執行個體保護的檔案。
 
-如果您的Document Security伺服器採用憑證式驗證，則必須在本機電腦中安裝您收到的憑證。 您必須選擇憑證驗證，並提供要用來驗證的憑證。
+如果您的 Document Security 伺服器採用憑證式驗證，則您必須在本機電腦上安裝您所收到的憑證。您需依規定選擇憑證驗證，並提供要用來驗證的憑證。
 
-在您在一個Microsoft® Office應用程式中為Document Security的執行個體設定連線設定後，此設定即適用於所有Word、Excel和PowerPoint。
+當您在 Microsoft® Office 應用程式中設定 Document Security 執行個體的連線設定後，此設定即適用於 Word、Excel 和 PowerPoint 等所有應用程式。
 
-#### 安裝使用者端憑證 {#install-the-client-side-certificate}
+#### 安裝用戶端憑證 {#install-the-client-side-certificate}
 
 如果您需依規定透過憑證式驗證或兩步驟驗證來存取 Document Security 網頁，則您會在本機電腦上收到您必須安裝的憑證。您會收到一個憑證檔案 (.PFX 或 .P12 檔案) 及其密碼。
 
@@ -72,11 +72,11 @@ ht-degree: 70%
 
 >[!NOTE]
 >
->如果您無法連線到伺服器，請嘗試在Internet Explorer中開啟Document Security網頁。 如果您無法使用Internet Explorer或如果對話方塊顯示有關伺服器憑證的警告，則Microsoft® Office適用的Document Security Extension無法連線到伺服器。 請聯絡伺服器管理員取得協助。
+>如果您無法連線到伺服器，請嘗試在 Internet Explorer 中開啟 Document Security 網頁。如果無法使用 Internet Explorer 連線到伺服器，或者如果對話框顯示有關伺服器憑證的警告，則 Microsoft® Office 適用的 Document Security Extension 無法連線到伺服器。請聯絡伺服器管理員取得協助。
 
 >[!NOTE]
 >
->如果您無法連線至Document Security，則會顯示一則訊息，指出「使用者名稱和密碼不正確，請檢查您的組態設定，然後再試一次。」 如果由於其他原因無法連線，則可能會顯示此訊息。如果您是第一次連線到伺服器，請確認您設定正確的伺服器名稱和連線埠。
+>如果無法連線到 Document Security，則會顯示一項訊息指出：「使用者名稱和密碼不正確，請查看您的設定，然後重試」。如果由於其他原因無法連線，則可能會顯示此訊息。如果您是第一次連線到伺服器，請驗證您的伺服器名稱和連接埠設定是否正確。
 
 #### 指定預設伺服器 {#specify-the-default-server}
 
@@ -88,17 +88,17 @@ ht-degree: 70%
 
 ### 使用協力驗證服務提供者 {#using-third-party-authentication-providers}
 
-您可以使用有 AEM Forms Document Security 的協力驗證服務提供者。這些驗證服務提供者會幫助您在受保護的文件上另增一個存取層。AEM Forms Document Security支援以下延伸的驗證工作流程：
+您可以使用有 AEM Forms Document Security 的協力驗證服務提供者。這些驗證服務提供者會幫助您在受保護的文件上另增一個存取層。AEM Forms Document Security 可支援以下的延伸驗證工作流程：
 
-* 使用預設AEM Forms URL的延伸驗證
+* 使用預設的 AEM Forms URL 的延伸驗證
 * 使用自訂 URL 的延伸驗證
 * 透過在 JEE 伺服器 AEM Forms 設定的協力身分識別服務提供者，使用預設延伸驗證工作流程
 * 透過設定在 JEE 伺服器 AEM Forms 的協力身分識別服務提供者，使用自訂延伸驗證工作流程
-* 使用自訂頁面的延伸驗證，以列出SAML驗證
+* 使用特訂頁面的延伸驗證，以列出 SAML 驗證
 
 #### 使用預設的 AEM Forms URL 的延伸驗證 {#extended-authentication-using-default-aem-forms-url}
 
-您可為延伸驗證使用預設的AEM Forms URL。 預設登陸頁面包含 Adobe 品牌。此外，為延伸驗證使用預設AEM Forms URL時，會使用預設AEM Forms設定。
+您可為延伸驗證使用預設的 AEM Forms URL。預設登陸頁面包含 Adobe 品牌。此外，為延伸驗證使用預設 AEM Forms URL 時，會使用預設的 AEM Forms 設定。
 
 執行以下步驟，透過預設的 Adobe 登陸 URL 啟用延伸驗證：
 
@@ -111,9 +111,9 @@ ht-degree: 70%
 
    >[!NOTE]
    >
-   >在 URL 中使用完整主機名稱。Adobe建議您使用HTTPS通訊協定。
+   >在 URL 中使用完整主機名稱。Adobe 建議您使用 HTTPS 通訊協定。
 
-   現在，AEM Forms Document Security已設定為使用延伸驗證，搭配預設的AEM Forms登陸URL。
+   現在，AEM Forms Document Security 設定為使用延伸驗證及預設的 AEM Forms 登陸 URL。
 
    ![](assets/third-party-authentication.png)
 
@@ -128,17 +128,17 @@ ht-degree: 70%
 
 若要使用自訂登陸 URL 來啟用延伸驗證：
 
-1. 將自訂驗證WAR檔案部署至AEM Forms伺服器。
+1. 將自訂驗證 WAR 檔案部署到 AEM Forms Server。
 1. 開啟 AEM Forms 管理 UI。
 1. 瀏覽至「服務 > Document Security > 設定 > 伺服器設定」。
-1. 啟用「允許延伸驗證」選項，並指定自訂的延伸驗證登陸URL。
-1. 在專案&#x200B;*&lt;node name=&quot;AllowedUrls&quot;>*&#x200B;之後，將下列專案新增至SSO節點下的`config.xml`檔案：
+1. 啟用「允許延伸驗證」選項，並指定自訂的延伸驗證登陸 URL。
+1. 將以下項目新增至 SSO 節點下的 `config.xml` 檔案，但在項目 *&lt;node name=&quot;AllowedUrls&quot;>* 後面：
 
    >[!NOTE]
    >
-   >&lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot;/>`!!discoiqbr!!`&lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>`!!discoiqbr!!`&lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot;/>`!!discoiqbr!!`
+   >&lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot;/>`!!discoiqbr!!`&lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>`!!discoiqbr!!`&lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot;/>`!!discoiqbr!!`
 
-   關於更新 config.xml 檔案的詳細步驟資訊，請參閱[手動編輯 Document Security 設定檔案](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions#manually_editing_the_document_security_configuration_file)。
+   關於更新 config.xml 檔案的詳細步驟資訊，請參閱[手動編輯 Document Security 設定檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions#manually_editing_the_document_security_configuration_file)。
 
    現在，AEM Forms Document Security 設定為透過自訂 AEM Forms 登陸 URL 使用延伸驗證
 
@@ -169,7 +169,7 @@ ht-degree: 70%
 
    *saml.sp.discovery.url=/demoJSP/saml_discovery.jsp*
 
-   現在，AEM Forms Document Security已設定為顯示包含所有已設定驗證服務提供者的自訂頁面。
+   現在，AEM Forms Document Security 已設定為顯示包含所有已設定驗證服務提供者的自訂頁面。
 
 ### 取得使用者帳戶 {#obtaining-a-user-account}
 
@@ -178,13 +178,13 @@ ht-degree: 70%
 * 想將受原則保護的檔案發送給您的 Document Security 使用者要將您加入原則中。
 * Document Security 管理員會為您建立帳戶。
 
-在您註冊並啟用帳戶後，您可以使用透過原則向您授權使用的受原則保護檔案。
+當您註冊並啟用帳戶後，即可以使用您已有權使用原則的受原則保護檔案。
 
 >[!NOTE]
 >
->如果您收到受原則保護的檔案，但沒有Document Security帳戶，請聯絡向您傳送檔案的人以尋求幫助。 同樣地，如果您收到註冊邀請，請聯絡寄件者以尋求協助。
+>如果您收到受原則保護的檔案，且沒有 Document Security 帳戶，請與向您發送檔案的人聯絡以尋求幫助。同樣，如果您收到註冊邀請，請聯絡寄件者尋求協助。
 
-如果您收到來自 Document Security 的電子郵件註冊邀請，則您可以使用電子郵件中的 URL 進行註冊，以便開啟打開線上註冊頁面。註冊後，您會收到關於啟用帳戶的第二個通知。
+如果您收到來自 Document Security 的電子郵件註冊邀請，則您可以使用電子郵件中的 URL 進行註冊，以便開啟打開線上註冊頁面。註冊後，您會收到關於啟用帳戶的第二次通知。
 
 #### 取得外部使用者帳戶 {#obtain-an-external-user-account}
 
@@ -200,7 +200,7 @@ ht-degree: 70%
 1. 開啟 Document Security 註冊的確認電子郵件。
 1. 按一下訊息中顯示的 URL。
 1. 按一下連結，即可前往登入頁面。
-1. 在&#x200B;**使用者名稱**&#x200B;方塊中，輸入您在Document Security下已註冊的電子郵件地址。 該電子郵件地址是您預設的 Document Security 使用者名稱。
+1. 在「**使用者名稱**」方框中，輸入您在 Document Security 下已註冊的電子郵件地址。該電子郵件地址是您預設的 Document Security 使用者名稱。
 1. 在「**密碼**」方框中，輸入您註冊時建立的密碼。
 1. 按一下「**登入**」。
 
@@ -240,7 +240,7 @@ Word、Excel 和 PowerPoint 檔案不支援在 Document Security 網頁中建立
   </tr>
   <tr>
    <td><p>變更 &gt; 修改頁面</p></td>
-   <td><p>不適用。</p><p>包括插入、刪除和旋轉頁面。</p></td>
+   <td><p>不適用。</p><p>包含插入、刪除和旋轉頁面。</p></td>
   </tr>
   <tr>
    <td><p>變更 &gt; 填寫與簽署</p></td>
@@ -323,17 +323,17 @@ Word、Excel 和 PowerPoint 檔案不支援在 Document Security 網頁中建立
  </tbody>
 </table>
 
-若要了解建立和管理原則的更多資訊，請參閱 [Document Security 使用者說明](https://help.adobe.com/en_US/AEMForms/6.1/RMHelp/)。
+若要了解建立和管理原則的更多資訊，請參閱 [Document Security 使用者說明](https://help.adobe.com/zh_TW/AEMForms/6.1/RMHelp/)。
 
 ### 套用原則 {#applying-policies}
 
-您可以將任何可用的原則套用至檔案，包括您建立的原則，以及您有權存取的原則集所屬的原則。 在套用原則之前，您必須儲存檔案。
+您可以將任何可用原則套用至檔案中，包括您所建立的原則，以及您有存取權的原則集所屬的原則。在套用原則之前，您必須儲存檔案。
 
-套用原則後，原則會新增至AEM Document Security選單上的「最近使用」清單中，這樣您就更易套用最常使用的原則。 「最近使用」清單僅顯示您連線之伺服器或預設伺服器的原則（如果您尚未登入其他Document Security執行個體）。
+在套用原則以後，原則會新增至 AEM Document Security 選單上的「最近使用」清單中，這樣您便更易套用最常用的原則。如果您尚未登入另一個 Document Security 執行個體，「最近使用」清單僅顯示您連接到的伺服器或預設伺服器。
 
 >[!NOTE]
 >
->原則只能套用至Microsoft® Office 2010和2013中的Word (.doc、.docx、.docm)、Excel (.xls、.xlsx、.xlsm)和PowerPoint (.ppt、.pptx、.pptm)檔案。 您不能將原則套用在 Word 範本檔案 (.dot)、Excel 範本檔案 (.xlt) 和 PowerPoint 範本檔案 (.pot)。
+>原則只能套用到 Microsoft® Office 2010 and 2013 的 Word (.doc、.docx、.docm)、Excel (.xls、.xlsx、.xlsm) 和 PowerPoint (.ppt、.pptx、.pptm) 檔案。您不能將原則套用在 Word 範本檔案 (.dot)、Excel 範本檔案 (.xlt) 和 PowerPoint 範本檔案 (.pot)。
 
 #### 套用一項原則 {#apply-a-policy}
 
@@ -346,46 +346,46 @@ Word、Excel 和 PowerPoint 檔案不支援在 Document Security 網頁中建立
 
 #### 套用最近使用的原則 {#apply-a-recently-used-policy}
 
-1. 在Microsoft® Office 2010和2013適用的Document Security Extension中，在&#x200B;**Document Security**&#x200B;標籤上，選取&#x200B;**安全** > *[原則名稱]*。
+1. 在 Microsoft® Office 2010 和 2013 適用的 Document Security Extension 中，在「**Document Security**」標籤上，選取「**安全性** > *[原則名稱]*」。
 1. 儲存檔案。
 
 ## 使用受原則保護的檔案 {#usingaemdocumentsecurityextensionpolicyprotectedfiles}
 
-檔案發佈者擁有Document Security所保護的受原則保護檔案的智慧財產。
+檔案發佈者擁有受原則的保護檔案中的智慧財產，這些檔案受 Document Security 保護。
 
-無論是在檔案發佈者組織的內部或外部，您都可以使用受原則保護的檔案。若要開啟受原則保護的檔案，Document Security必須識別您。 它必須透過LDAP/Active Directory來執行。 或者，它必須以本機使用者的身分在JEE上LiveCycle/AEM表單，或透過在邀請後註冊的方式進行註冊。
+無論是在檔案發佈者組織的內部或外部，您都可以使用受原則保護的檔案。Document Security 必須識別您才能開啟受原則保護的檔案。必須透過 LDAP/Active Directory 來執行此操作。或者，它必須以 JEE 上 LiveCycle/AEM 表單的本機使用者身分或在邀請後進行註冊，來執行此操作。
 
-如果您收到受原則保護的檔案，但沒有Document Security帳戶，請聯絡寄件者以尋求協助。 同樣地，如果您收到註冊邀請，請聯絡寄件者以尋求協助。
+如果您收到受原則保護的檔案但沒有 Document Security 帳戶，請聯絡寄件者尋求協助。同樣，如果您收到註冊邀請，請聯絡寄件者尋求協助。
 
 ### 使用 Microsoft® Office 中受原則保護的檔案 {#working-with-policy-protected-files-in-microsoft-office}
 
-Microsoft® Office適用的Document Security Extension會限制特定Word、Excel和PowerPoint功能，以保護檔案發佈者的智慧財產。 如果您沒有變更檔案的權限，您就無法儲存修改內容。
+Microsoft® Office 適用的 Document Security Extension 會限制 Word、Excel 和 PowerPoint 部分功能，這是為了保護檔案發佈者的智慧財產。如果您沒有變更檔案的權限，您就無法儲存修改內容。
 
-如果您是使用受原則保護的檔案，則某些產品功能可能不適用或無法正常使用。如果開啟未受保護的檔案，則會啟用大部分的功能，但讓您在沒有複製或匯出許可權的情況下，從受原則保護的檔案匯入或複製內容的功能除外。
+如果您是使用受原則保護的檔案，則某些產品功能可能不適用或無法正常使用。如果開啟未受保護的文件，則大多數功能都可供使用，但您無法從自己沒有複製或匯出權限的受原則保護檔案中匯入或複製內容。
 
 >[!NOTE]
 >
->在使用有 Document Security Extension 支援的 Office 應用程式時，建議您停用 Windows DEP 設定。若要確保在啟用Document Security Extension和McAfee VirusScan (On-Access Scan)的電腦上順利啟動Office應用程式，請停用McAfee VirusScan主控台中的「緩衝區溢位保護」選項。 此調整有助於防止潛在衝突。
+>在使用有 Document Security Extension 支援的 Office 應用程式時，建議您停用 Windows DEP 設定。若電腦有安裝 Document Security Extension 和 McAfee VirusScan (啟用常駐掃描)，為了確保此電腦能順利啟動 Office 應用程式，請停用 McAfee VirusScan 控制台中的「緩衝區溢位保護」選項。此調整有助於防止潛在的衝突。
 
-如果有某個功能無法使用，則選單上的命令名稱和相關的工具欄按鈕將不適用。在Microsoft® Office適用的Document Security Extension中，當您將滑鼠指標停留在命令或按鈕上時，工具提示會指出該命令因Document Security而無法使用。
+如果有某個功能無法使用，則選單上的命令名稱和相關的工具欄按鈕將不適用。在 Microsoft® Office 適用的 Document Security Extension 中，當您將滑鼠指標停留在命令或按鈕上時，工具提示會指出該命令因 Document Security 而無法使用。
 
 ### 開啟受原則保護的檔案 {#opening-policy-protected-files}
 
-您能採用與開啟任何其他檔案相同的方法，開啟受原則保護的檔案。如果您尚未登入Document Security，系統會提示您登入。 也就是說，如果您未連線到網際網路，而且可以離線開啟檔案。 如果您取消登入程序，您的拒絕就會被拒絕。
+您能採用與開啟任何其他檔案相同的方法，開啟受原則保護的檔案。如果您尚未登入 Document Security，系統會提示您登入。也就是說，如果您未連接到網際網路，則可以離線開啟檔案。如果您取消登入程序，您的拒絕就會被拒絕。
 
-如果您沒有開啟檔案的許可權，您將會收到存取被拒的通知。 如果檔案存取權限被撤銷，系統就會將您導向最新版的檔案 (若有適用版本)。如果無法開啟受原則保護的檔案並需要更多協助，請與檔案發佈者聯絡。
+如果您沒有開啟檔案的權限，您就會收到存取被拒的通知。如果檔案存取權限被撤銷，系統就會將您導向最新版的檔案 (若有適用版本)。如果無法開啟受原則保護的檔案並需要更多協助，請與檔案發佈者聯絡。
 
 在開啟受保護的檔案時，檔案名稱後的標題列內容會指出該檔案受到 AEM Document Security 的保護。
 
-從SharePoint伺服器在Microsoft® Office適用的Document Security Extension中開啟受保護的檔案時，請確保與該檔案型別相關聯的Office程式已開啟，例如Word、Excel或PowerPoint。 如果要試著在不開啟相關應用程式的情况下開啟檔案，檔案可能無法開啟，且系統會顯示錯誤訊息並指出您必須安裝適用的外掛程式。除了開啟必要的應用程式之外，Adobe還建議您清除快取資料夾。 在從SharePoint伺服器Office適用的Document Security Extension中開啟受保護的檔案之前，請先執行此動作。 此外，當您從 SharePoint 伺服器開啟受保護的文件時，不論是否套用原則，文件上所有權限皆為停用狀態。
+從 SharePoint 伺服器 Microsoft® Office 適用的 Document Security Extension 中開啟受保護的文件時，請確保與該檔案類型有關聯的 Office 程式已開啟，如 Word、Excel 或  PowerPoint。如果要試著在不開啟相關應用程式的情况下開啟檔案，檔案可能無法開啟，且系統會顯示錯誤訊息並指出您必須安裝適用的外掛程式。除了開啟必要的應用程式之外，Adobe 建議您清除快取資料夾。從 SharePoint Server 在 Office 適用的 Document Security Extension 中開啟受保護的文件之前執行此操作。此外，當您從 SharePoint 伺服器開啟受保護的文件時，不論是否套用原則，文件上所有權限皆為停用狀態。
 
-當您開啟受保護的文件時，系統可能會提示您選擇驗證方法，實際情形取決於 Document Security 所執行的驗證方法。如果 Document Security 支援多種驗證方法，系統會向您顯示驗證選項。例如，如果Document Security伺服器同時提供使用者名稱/密碼和憑證驗證，您可以選擇適當的驗證方法。 如果啟用憑證式驗證，系統會提示您使用已收到並安裝的憑證。
+當您開啟受保護的文件時，系統可能會提示您選擇驗證方法，實際情形取決於 Document Security 所執行的驗證方法。如果 Document Security 支援多種驗證方法，系統會向您顯示驗證選項。例如，如果 Document Security 伺服器同時提供使用者名稱/密碼和憑證驗證的方法，則可以選擇適合的驗證方法。如果啟用憑證式驗證，系統會提示您使用已收到並安裝的憑證。
 
-在開啟受保護檔案時，使用者體驗取決於伺服器上的相互驗證設定。如果只安裝一個有效的使用者端憑證，則不會出現驗證對話方塊，且檔案會成功開啟。 但是，如果一台電腦上安裝了多個使用者端憑證，則會出現驗證對話框。使用者必須選擇有效的憑證，才能開啟受保護的檔案。
+在開啟受保護檔案時，使用者體驗取決於伺服器上的相互驗證設定。如果只安裝一個有效的用戶端憑證，則不會出現驗證對話框，且檔案會順利開啟。但是，如果一台電腦上安裝了多個用戶端憑證，則會出現驗證對話框。使用者必須選擇有效的憑證，才能開啟受保護的檔案。
 
 ### 從檔案中移除原則保護 {#removing-policy-protection-from-a-file}
 
-如果允許，您可以從已受保護的檔案中移除原則保護。 如果這樣做，檔案將不再受 Document Security 的保護。
+如果允許，您可以從已受保護的檔案中移除原則保護。如果這樣做，檔案將不再受 Document Security 的保護。
 
 1. 在 Microsoft® Office 2010 和 Office 2013 適用的 Document Security Extension 中，在「**Document Security**」標籤上，選取「**移除**」。
 
@@ -398,7 +398,7 @@ Microsoft® Office適用的Document Security Extension會限制特定Word、Exce
 
 ### 檢視安全性設定 {#viewing-security-settings}
 
-您可以檢視目前檔案的列印許可權。 您也可以在複製、變更和離線存取時檢視目前檔案的許可權，以及檔案的有效期。
+您可以檢視目前檔案擁有的權限。您也可以檢視目前檔案的列複製、變更和離線存取等權限以及檔案有效期限。
 
 在 Microsoft® Office 2010 適用的 Document Security Extension 中，在「Document Security」標籤上的安全性狀態群組會顯示您的檔案權限。
 
@@ -410,29 +410,29 @@ Microsoft® Office適用的Document Security Extension會限制特定Word、Exce
 
 如果管理員已啟用「自動套用原則」功能，當您儲存檔案時，您建立或編輯的任何文件皆會自動受到保護。
 
-如果啟用自動套用原則，Microsoft® Office適用的Document Security Extension會提示您登入Document Security伺服器。 輸入您的使用者名稱與密碼，讓伺服器可以驗證您的身分。 如果您提供了正確的登入憑證，文件會儲存並受到保護。
+如果啟用自動套用原則，Microsoft® Office 適用的 Document Security Extension 會提示您登入 Document Security 伺服器。輸入您的使用者名稱和密碼，以便伺服器可以對您進行驗證。如果您提供了正確的登入憑證，文件會儲存並受到保護。
 
 >[!NOTE]
 >
->如果您無法登入使用 Document Security，則文件可能會或不會儲存；此情況取決於管理員如何設定自動套用原則。 向管理員查詢，在這種情況下會如何處理文件。
+>如果您無法登入使用 Document Security，則文件可能會或不會儲存；此情形取決於管理員如何設定自動套用原則。向管理員查詢，在這種情況下會如何處理文件。
 
 ### 離線存取的同步處理 {#synchronizing-for-offline-access}
 
-原則可讓您在離線且未連線到 Document Security 時開啟檔案。在離線工作之前，您必須先登入使用 Document Security，並在伺服器上建立您的憑證。如果您打算離線處理檔案，Adobe建議您與Document Security同步。 請在中斷連線之前執行此動作，以確保伺服器上的檔案使用最新的原則設定。 Adobe也建議您在離線開啟檔案之前，先線上上開啟檔案一次。 如果您未在線上開啟檔案或未與伺服器同步處理，您仍然可在離線時使用受原則保護的檔案。但是，離線租期不得過期，且在上次手動或自動與伺服器同步處理後，檔案的原則設定不得有任何變更。
+原則可讓您在離線且未連線到 Document Security 時開啟檔案。在離線工作之前，您必須先登入使用 Document Security，並在伺服器上建立您的憑證。如果您打算離線處理檔案，Adobe 建議您與 Document Security 同步。在中斷連線之前執行此操作，以確保伺服器上的檔案使用最新的原則設定。在離線開啟檔案以前，Adobe 也建議您也在線上開啟該檔案一次。如果您未在線上開啟檔案或未與伺服器同步處理，您仍然可在離線時使用受原則保護的檔案。但是，離線租期不得過期，且在上次手動或自動與伺服器同步處理後，檔案的原則設定不得有任何變更。
 
 請執行下列動作：
 
 * 在 Microsoft® Office 2010 和 Office 2013 適用的 Document Security Extension 中，在「**Document Security**」標籤上，選取「**離線同步處理**」。
 
-  ***附註&#x200B;**：「離線同步處理」按鈕可供使用，即使使用者沒有檔案的離線許可權。 但是，選取按鈕不會產生任何效果。*
+  ***注意&#x200B;**：即使使用者沒有文件的離線權限，也可以使用「離線同步處理」按鈕。但是，選取按鈕不會起任何作用。*
 
 ### 使用動態浮水印 {#working-with-dynamic-watermarks}
 
 Microsoft® Office 適用的 Document Security Extension 支援受原則保護文件含有的文字式浮水印。動態浮水印可以包含可能變更的資訊，例如日期、時間、使用者名稱或原則名稱。如果使用者列印受原則保護的檔案，且該檔案包含動態浮水印和列印權限，則浮水印將顯示在輸出中。
 
-Document Security Extension不支援豐富的浮水印功能。 豐富的浮水印功能包括PDF式浮水印、浮水印中的多個元素及文字格式選項等。 此外也包含頁面範圍。
+Document Security Extension 不支援豐富的浮水印功能。豐富的浮水印功能包括 PDF 式浮水印、浮水印中的多個元素、文字格式選項等。還包括頁面範圍。
 
-您可以使用Document Security網頁建立動態浮水印。 如需詳細資訊，請參閱[Document Security使用者說明](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/work-with-document-security/document-security)。
+您可以使用 Document Security 網頁建立動態浮水印。如需詳細資訊，請參閱 [Document Security 使用者說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/administrator-help/work-with-document-security/document-security)。
 
 Microsoft® Office 適用的 Document Security Extension 可提供這些浮水印功能的支援：
 
@@ -453,8 +453,8 @@ Microsoft® Office 適用的 Document Security Extension 可提供這些浮水�
    <td><p>支援。</p></td>
   </tr>
   <tr>
-   <td><p>用作背景</p></td>
-   <td><p>無論是否選取「用作背景」，動態浮水印的顯示行為均相同。</p><p>若是Word 2010和2013，動態浮水印僅會顯示在「列印版面」和「列印預覽」檢視中。 </p><p>同樣對於Excel 2010和2013，它會顯示在「列印版面」和「頁面版面」檢視中。</p></td>
+   <td><p>使用為背景</p></td>
+   <td><p>無論是否選取「用作背景」，動態浮水印的顯示行為均相同。</p><p>若是 Word 2010 和 2013，動態浮水印僅會顯示在「列印版面」和「預覽列印」視圖中。 </p><p>若是 Excel 2010 和 2013，同樣地，動態浮水印僅會顯示在「列印版面」和「頁面版面」視圖中。</p></td>
   </tr>
   <tr>
    <td><p>垂直定位</p></td>
@@ -479,9 +479,10 @@ Microsoft® Office 適用的 Document Security Extension 可提供這些浮水�
  </tbody>
 </table>
 
-### 開啟 Document Security 註冊網頁 {#opening-the-document-security-web-pages}
+### 開啟 Document Security 網頁 {#opening-the-document-security-web-pages}
 
-您可以開啟Document Security網頁，以建立和更新使用者原則，並檢視受原則保護檔案的狀態和稽核資訊。 您也可以使用Document Security網頁，變更原則或撤銷受原則保護檔案的存取權。
+您可以開啟 Document Security 網頁來建立和更新使用者原則，並可檢視受原則保護檔案的狀態和審核資訊。
+您也可以使用 Document Security 網頁，變更原則或撤銷受原則保護檔案的存取權。
 
 若要開啟 Document Security 網頁，在 Microsoft® Office 2010 和 Office 2013 適用的 Document Security Extension 中，在「**Document Security**」標籤上，選取「**建立和管理原則**」。如果您尚未提供登入資訊，瀏覽器會開啟伺服器登入頁面。
 
@@ -489,7 +490,7 @@ Microsoft® Office 適用的 Document Security Extension 可提供這些浮水�
 
 如果您擁有權限 (通常是 Document Security 管理員或檔案發佈者的權限)，您可稍後在檔案中套用不同原則或變更目前已套用原則的設定。
 
-若要變更原則的設定，請使用Document Security網頁。
+若要變更原則的設定，請使用 Document Security 網頁。
 
 1. 請執行下列動作：
 
@@ -499,25 +500,25 @@ Microsoft® Office 適用的 Document Security Extension 可提供這些浮水�
 
 ### 撤銷檔案存取權限 {#revoking-file-access-privileges}
 
-您可以撤銷開啟受保護檔案的功能。撤銷檔案存取權時，您可以在使用者嘗試開啟訊息時指定訊息，並提供更新版本的URL （如果以修訂版本取代）。
+您可以撤銷開啟受保護檔案的功能。當您撤銷檔案存取權時，還可以指定向嘗試開啟該檔案的使用者顯示的訊息；同時，如果要以修訂版本取代該檔案，還可以提供該檔案更新版的 URL。
 
 1. 請執行下列動作：
 
    * 在 Microsoft® Office 2010 和 Office 2013 適用的 Document Security Extension 中，在「**Document Security**」標籤下，選取「**撤銷**」。
 
-   Document Security網頁會開啟至撤銷檔案頁面。
+   Document Security 網頁會開啟至撤銷文件頁面。
 
 1. 指定要顯示的訊息，並指定更新版的 URL (若有)，然後按一下「**確定**」。
 
-若要了解撤銷檔案存取權限的更多資訊，請參閱 [Document Security 使用者說明](https://help.adobe.com/en_US/AEMForms/6.1/RMHelp/)。
+若要了解撤銷檔案存取權限的更多資訊，請參閱 [Document Security 使用者說明](https://help.adobe.com/zh_TW/AEMForms/6.1/RMHelp/)。
 
-存取許可權可透過Document Security網頁恢復。
+存取權限可透過 Document Security 網頁恢復。
 
 ### 檢視檔案審核歷史記錄 {#viewing-the-file-audit-history}
 
 Document Security 可以儲存受原則保護檔案的審核歷史記錄，這樣您便能審核使用者執行您檔案的操作。
 
-Word、Excel和PowerPoint檔案的已稽核事件包括：
+Word、Excel 和 PowerPoint 檔案的已審核活動包含以下這些：
 
 **保護新文件** 套用在檔案中的原則
 
@@ -541,7 +542,7 @@ Word、Excel和PowerPoint檔案的已稽核事件包括：
 
 在 Microsoft® Office 2010 和 Office 2013 適用的 Document Security Extension 中，在「**Document Security**」標籤上，選取「**審核歷史記錄**」。
 
-Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已稽核事件。
+Document Security 網頁會開啟至活動頁面，並顯示目前檔案的已審核活動。
 
 ### Microsoft® Office 受限制功能 {#microsoft-office-restricted-features}
 
@@ -568,7 +569,7 @@ Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已
 
 #### Word 2010 和 Word 2013 限制 {#word-2010-and-word-2013-restrictions}
 
-當您在Word中開啟受原則保護的檔案時，除非您關閉並重新啟動Word，否則無法儲存自動檔案修復資訊。 此外，下列功能在所述情况下會受到限制：
+在 Word 開啟受原則保護的檔案時，儲存自動檔案修復的資訊會無法儲存，直到您關閉和重新啟動 Word 為止。此外，下列功能在所述情况下會受到限制：
 
 **檔案 > 新增 > 從現有新增** 可使用，但是在任何受原則保護的檔案打開時使用此命令建立的檔案無法儲存。無法將新檔案中的內容複製到其他檔案。
 
@@ -580,11 +581,11 @@ Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已
 
 **檔案 > 儲存並傳送&#x200B;&#x200B;** 在受保護工作階段中，所有選項都無法使用。
 
-**檔案>資訊> Protect檔案>以密碼加密、新增數位簽名、標示為完稿、依人員限制許可權**&#x200B;在受保護工作階段中無法使用。
+**檔案 > 資訊 > 保護文件 > 以密碼加密、新增數位簽名、標示為完稿、依人員限制權限**&#x200B;在受保護工作階段中無法使用。
 
 **檔案 > 工作流程&#x200B;&#x200B;** 在受保護工作階段中無法使用。
 
-***注意&#x200B;**：在Word、Excel和PowerPoint 2010中啟動工作流程僅適用於Office Professional Plus 2010、Office Enterprise 2010、Office Ultimate 2010和獨立的2010版本。*
+***注意&#x200B;**：只有在 Office Professional Plus 2010、Office Enterprise 2010、Office Ultimate 2010，以及獨立 2010 版本中，Word、Excel 和 PowerPoint 2010 的啟動工作流程才可使用。*
 
 **部落文章 > 發佈** 在受保護工作階段中無法使用。
 
@@ -605,9 +606,9 @@ Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已
 
 **檢視 > 校樣 > 搜尋** 受到複製權限的限制。如果不允許複製，則無法使用。
 
-**檢閱>語言>翻譯>翻譯檔案**&#x200B;已啟用並有複製許可權。
+**檢閱 > 語言 > 翻譯 > 翻譯文件** 已啟用並有複製權限。
 
-**檢閱>語言>翻譯>翻譯選取的文字**&#x200B;已啟用複製許可權。
+**檢閱 > 語言 > 翻譯 > 翻譯選取的文字** 已啟用並有複製權限。
 
 **檢閱 > 語言 > 翻譯 > 迷你翻譯工具** 已啟用並有複製權限。
 
@@ -618,13 +619,13 @@ Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已
 
 **檢閱 > 保護 > 限制編輯** 在受保護工作階段中無法使用。
 
-**檢視>巨集**&#x200B;複製許可權會限制某些巨集，除非允許複製，否則無法使用這些巨集。
+**檢視 > 巨集** 複製權限會限制一些巨集，除非允許複製，否則無法使用。
 
 **增益集** 在受保護工作階段中無法新增或移除。
 
 **線上共同作業** 在受保護工作階段中無法使用。
 
-**主要和子檔案**&#x200B;當您在主要檔案中開啟子檔案時，主要檔案原則會控制子檔案。 如果子文件單獨開啟，該文件則無法列印、複製或修改。
+**主控文件和子文件** 當您在主控文件中開啟子文件時，主控文件原則會控管子文件。如果子文件單獨開啟，該文件則無法列印、複製或修改。
 
 **重新摘要** 在受保護工作階段中無法使用。
 
@@ -632,9 +633,9 @@ Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已
 
 **文件面板** 在受保護工作階段中無法使用。
 
-**開發商 > 文件範本** 在受保護工作階段中無法使用。若要存取此指令，請選取「檔案>選項>自訂>開發人員標籤>範本>檔案範本」。
+**開發商 > 文件範本** 在受保護工作階段中無法使用。若要存取此命令，請選取「檔案 > 選項 > 自訂 > 開發人員標籤 > 範本 > 文件範本」。
 
-**大綱>主要檔案>建立子檔案，插入子檔案**&#x200B;在受保護工作階段中無法使用。
+**大綱 > 主控文件 > 建立子文件、插入子文件** 在受保護工作階段中無法使用。
 
 #### Excel 2010 和 Excel 2013 限制 {#excel-2010-and-excel-2013-restrictions}
 
@@ -658,7 +659,7 @@ Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已
 
 **檔案 > 工作流程&#x200B;&#x200B;** 在受保護工作階段中無法使用。
 
-***注意&#x200B;**：在Word、Excel和PowerPoint 2010中啟動工作流程僅適用於Office Professional Plus 2010、Office Enterprise 2010、Office Ultimate 2010和獨立的2010版本。*
+***注意&#x200B;**：只有在 Office Professional Plus 2010、Office Enterprise 2010、Office Ultimate 2010，以及獨立 2010 版本中，Word、Excel 和 PowerPoint 2010 的啟動工作流程才可使用。*
 
 **檔案 > 伺服器 > 檔案伺服器工作功能表&#x200B;&#x200B;** 在受保護工作階段中無法使用。
 
@@ -684,7 +685,7 @@ Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已
 
 **插入 > 文字 > 頁首及頁尾** 受到變更權限的限制。受原則保護的文件無法使用。
 
-**資料>取得外部資料**&#x200B;無法匯入受原則保護檔案的資料。
+**Data > Get External Data** 無法匯入受原則保護檔案的資料。
 
 **資料 > 大綱 > 小計** 受到變更權限的限制。
 
@@ -706,13 +707,13 @@ Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已
 
 **檢閱 > 變更 > 允許使用者編輯範圍** 在受保護工作階段中無法使用。
 
-**檢閱>變更>追蹤變更>醒目提示變更**&#x200B;含有動態浮水印的受原則檔案無法使用。
+**檢閱 > 變更 > 追蹤變更 > 醒目提示變更** 含有動態浮水印的受原則檔案無法使用。
 
 **檢視 > 巨集** 受到變更權限的限制。
 
 **檢視 > 儲存工作區** 命令不能使用。
 
-**開發人員> XML >擴充套件**&#x200B;複製許可權會限制某些巨集，除非您允許複製，否則無法使用這些巨集。
+**開發人員 > XML > 擴充套件** 複製權限會限制一些巨集，除非允許複製，否則無法使用。
 
 **公式 > 公式稽核 > 公式稽核** 受到變更權限的限制。除非允許複製，否則無法使用。
 
@@ -720,7 +721,7 @@ Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已
 
 **儲存自動復原資訊&#x200B;&#x200B;** 在受保護工作階段中無法使用。
 
-***注意&#x200B;**：如果您嘗試在沒有許可權的情況下變更受原則保護檔案中的儲存格，Excel會錯誤地警告您使用「取消保護工作表」命令來移除保護。*
+***注意&#x200B;**：如果您嘗試對您無權限的受原則保護檔案的儲存格進行變更，Excel 會錯誤地警告您使用「取消保護工作表」命令來移除保護。*
 
 #### PowerPoint 2010 和 PowerPoint 2013 限制 {#powerpoint-2010-and-powerpoint-2013-restrictions}
 
@@ -736,9 +737,9 @@ Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已
 
 **檔案 > 儲存並傳送&#x200B;&#x200B;** 在受保護工作階段中無法使用。
 
-**檔案>資訊> Protect簡報>以密碼加密、新增數位簽名、標示為完稿、依人員限制許可權**&#x200B;在受保護工作階段中無法使用。
+**檔案 > 資訊 > 保護簡報 > 以密碼加密、新增數位簽名、標示為完稿、依人員限制權限** 在受保護工作階段中無法使用。
 
-**檔案> PowerPoint選項>儲存自動復原資訊**&#x200B;在受保護工作階段中無法使用。
+**檔案 > PowerPoint 選項 > 儲存自動復原資訊** 在受保護工作階段中無法使用。
 
 **檔案 > 伺服器 > 檔案伺服器工作功能表&#x200B;&#x200B;** 在受保護工作階段中無法使用。
 
@@ -748,13 +749,13 @@ Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已
 
 **首頁 > 剪貼簿 > 選擇性貼上** 受到變更權限的限制。
 
-**首頁>幻燈片>新增幻燈片>從大綱插入幻燈片、重複使用幻燈片**&#x200B;在受保護工作階段中無法使用。
+**首頁 > 幻燈片 > 新增幻燈片 > 從大綱插入幻燈片、重複使用幻燈片** 在受保護工作階段中無法使用。
 
 **插入 > 文字 > 物件** 在受保護工作階段中無法使用。任何時候都不能插入受原則保護的檔案。
 
-**設計>背景>背景樣式，隱藏背景圖形，格式背景**&#x200B;含有動態浮水印的受原則檔案無法使用。
+**設計 > 背景 > 背景樣式，隱藏背景圖形、格式背景** 含有動態浮水印的受原則檔案無法使用。
 
-**投影片放映>設定>錄製投影片放映**&#x200B;受到變更許可權的限制。
+**幻燈片 > 設定 > 錄製幻燈片放映** 受到變更權限的限制。
 
 **檢視 > 校樣 > 搜尋** 受到複製權限的限制。
 
@@ -765,7 +766,7 @@ Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已
 
 **檢視 > 簡報檢視 > 幻燈片放映** 受到變更權限的限制。如果不允許變更，且檔案經過修改，即無法檢視幻燈片放映。
 
-**檢視>巨集**&#x200B;複製許可權會限制某些巨集，除非允許複製，否則無法使用這些巨集。
+**檢視  > 巨集** 複製權限會限制一些巨集，除非允許複製，否則無法使用。
 
 **增益集** 在受保護工作階段中無法新增或移除。
 
@@ -773,14 +774,14 @@ Document Security網頁會開啟至事件頁面，其中顯示目前檔案的已
 
 ## 使用協力驗證服務提供者 {#use-third-party-authentication-providers}
 
-您可以使用有 AEM Forms Document Security 的協力驗證服務提供者。這些驗證服務提供者會幫助您在受保護的文件上另增一個存取層。AEM Forms Document Security支援以下延伸的驗證工作流程：
+您可以使用有 AEM Forms Document Security 的協力驗證服務提供者。這些驗證服務提供者會幫助您在受保護的文件上另增一個存取層。AEM Forms Document Security 可支援以下的延伸驗證工作流程：
 
-* 使用預設AEM Forms URL的延伸驗證
+* 使用預設的 AEM Forms URL 的延伸驗證
 * 使用自訂 URL 的延伸驗證
 * 透過在 JEE 伺服器 AEM Forms 設定的協力身分識別服務提供者，使用預設延伸驗證工作流程
 * 透過設定在 JEE 伺服器 AEM Forms 的協力身分識別服務提供者，使用自訂延伸驗證工作流程
-* 使用自訂頁面的延伸驗證，以列出SAML驗證
+* 使用特訂頁面的延伸驗證，以列出 SAML 驗證
 
 ## 字彙表 {#glossary}
 
-關於 JEE 術語的 LiveCycle 和 AEM Forms 資訊，請參閱[第 19 章：字彙表](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)。
+關於 JEE 術語的 LiveCycle 和 AEM Forms 資訊，請參閱[第 19 章：字彙表](https://helpx.adobe.com/tw/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)。

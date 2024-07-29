@@ -8,9 +8,9 @@ topic-tags: using
 discoiquuid: bdc3f174-e417-4d3e-b3af-972cdcc10133
 exl-id: 98f24032-0774-47f8-bcc5-1ee37b417833
 source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
@@ -18,21 +18,21 @@ ht-degree: 49%
 
 ## 安裝和設定問題疑難排解 {#troubleshootinginstallationandconfiguration}
 
-如果在安裝和設定Microsoft Office適用的AEM Document Security Extension時遇到問題，在安裝之前，請確保仔細按照[安裝](installing-configuring-aemdsext.md)文章一節的說明進行。
+如果在安裝和設定 Microsoft Office 適用的 AEM Document Security Extension 時遇到問題，在安裝之前，請確保仔細按照「[安裝](installing-configuring-aemdsext.md)」文章一節的說明進行。
 
-如果您根據檔案說明安裝並設定所有專案，請檢閱下列各節以找出與您所遇到類似的問題。
+如果您是根據文件說明安裝並設定所有內容，請查看以下各節來解決與您所遇到類似的問題。
 
 ### Microsoft Office 應用程式無法載入 Document Security Extension {#document-security-extension-fails-to-load-for-microsoft-office-applications}
 
-Windows登入中的LoadBehavior屬性會指定Document Security外掛程式的執行階段行為。 如果 LoadBehavior 屬性設定為 3，則所有外掛程式會自動載入。在安裝Microsoft Office適用的Document Security Extension以前，請確保LoadBehavior屬性值設定為3。
+Windows 登錄中的 LoadBehavior 屬性會指定 Document Security 外掛程式的執行階段行為。如果 LoadBehavior 屬性設定為 3，則所有外掛程式會自動載入。在安裝 Microsoft Office 適用的 Document Security Extension 以前，請確保將 LoadBehavior 屬性值設定為 3。
 
-1. 在進行變更之前，請先備份Windows登入。 若需要詳細的說明，請參閱 [如何修改 Windows 登錄](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)。
+1. 在進行變更前，請備份 Windows 登錄。若需要詳細的說明，請參閱 [如何修改 Windows 登錄](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)。
 1. 在「登錄編輯程式」中，瀏覽至 HKEY_CURRENT_USER\Software\Microsoft\Office\Word\Addins\Adobe.DRMIntegration.WordAddin or HKEY_LOCAL_MACHINE\Software\Microsoft\Office\Word\Addins\Adobe.DRM。
-1. 將&#x200B;**LoadBehavior**&#x200B;屬性的值設定為3。
+1. 將 **LoadBehavior** 屬性值設定為 3。
 
 1. 關閉登錄編輯程式。
 
-若要了解 LoadBehavior 詳細資訊，請參閱 [VSTO 增益集的登錄項目](https://learn.microsoft.com/en-us/visualstudio/vsto/registry-entries-for-vsto-add-ins?view=vs-2022&amp;redirectedfrom=MSDN#LoadBehavior) 文章。
+若要了解 LoadBehavior 詳細資訊，請參閱 [VSTO 增益集的登錄項目](https://learn.microsoft.com/en-us/visualstudio/vsto/registry-entries-for-vsto-add-ins?view=vs-2022&amp;redirectedfrom=MSDN#LoadBehavior)文章。
 
 ## 疑難排解系統管理工作 {#admintasks}
 
@@ -40,4 +40,4 @@ Windows登入中的LoadBehavior屬性會指定Document Security外掛程式的�
 
 ### 在安裝 Document Security Extension 時，Microsoft Office 應用程式無法順利啟動 {#microsoft-office-applications-dont-start-smoothly-on-installing-document-security-extension}
 
-若要確保Office應用程式在已安裝Document Security Extension且已啟用即時(On-Access)掃描的McAfee VirusScan下順利啟動，請停用McAfee VirusScan控制檯中的「緩衝區溢位保護」。
+為確保已經安裝 Document Security Extension 和 McAfee VirusScan (啟用常駐掃描) 的電腦可以順利啟動 Office 應用程式，請至 McAfee VirusScan 主控台停用「緩衝區溢位保護」。
