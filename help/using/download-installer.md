@@ -5,10 +5,10 @@ uuid: b4c7d1d1-7eae-4fd3-8282-132c80a976e8
 contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
 exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
-source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: ht
-source-wordcount: '207'
-ht-degree: 100%
+source-git-commit: 265c81b4b424c96e1d53c962af39756ee43c443d
+workflow-type: tm+mt
+source-wordcount: '213'
+ht-degree: 82%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 ## 系統需求 {#system-requirements}
 
-* Microsoft® Windows 7 或 Windows 10 的 32 位元或 64 位元版本
+* Microsoft® Windows 11上的32位元或64位元版Microsoft® Office 2019 Professional Plus
+* Microsoft® Office 2016、Office 2019的32位元或64位元版本，或安裝為Microsoft® Windows 10上Office 365一部分的Office案頭應用程式
 * 注意：Microsoft® Office 適用的 Document Security Extension 也預計可在 Microsoft® Surface 裝置上使用。
-* Microsoft® Office 2013、2016、2019 的 32 位元或 64 位元版本，或安裝為 Office 365 一部分的 Microsoft® Office 桌面應用程式
 * 1.3 GHz 或更快處理器
 * 2 GB RAM
 * 100 MB 的可用硬碟空間
