@@ -6,9 +6,9 @@ contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
 exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
 source-git-commit: 265c81b4b424c96e1d53c962af39756ee43c443d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 82%
 
 ## 系統需求 {#system-requirements}
 
-* Microsoft® Windows 11上的32位元或64位元版Microsoft® Office 2019 Professional Plus
-* Microsoft® Office 2016、Office 2019的32位元或64位元版本，或安裝為Microsoft® Windows 10上Office 365一部分的Office案頭應用程式
-* 注意：Microsoft® Office 適用的 Document Security Extension 也預計可在 Microsoft® Surface 裝置上使用。
+* Microsoft® Windows 11 上的 32 位元或 64 位元版本的 Microsoft® Office 2019 Professional Plus
+* Microsoft® Windows 10 上作為 Office 365 的一部分安裝的 32 位元或 64 位元版本的 Microsoft® Office 2016、Office 2019 或 Office 桌面應用程式
+* 注意：Microsoft® Office 的文件安全性擴充功能預計也適用於 Microsoft® Surface 裝置。
 * 1.3 GHz 或更快處理器
 * 2 GB RAM
 * 100 MB 的可用硬碟空間
