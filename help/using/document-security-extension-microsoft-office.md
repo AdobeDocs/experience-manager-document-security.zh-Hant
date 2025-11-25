@@ -82,7 +82,7 @@ Document Security 管理員和使用者會建立原則。管理員會建立適�
   </tr>
   <tr>
    <td><p>Patch 更新、技術提示，以及有關此產品版的其他資訊</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support">Experience Cloud 技術支援</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support">Experience Cloud 技術支援</a></p> </td>
   </tr>
  </tbody>
 </table>
