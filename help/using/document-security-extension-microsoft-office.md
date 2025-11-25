@@ -1,15 +1,15 @@
 ---
-title: Microsoft&reg; Office 適用的 AEM Document Security Extension 介紹
+title: 'Microsoft&reg; Office 適用的 AEM Document Security Extension 介紹 '
 description: 使用 Microsoft&reg; Office 適用的 Document Security Extension，您可以將預先定義的機密性設定套用至 Microsoft&reg; Office 檔案。
 uuid: a5428c50-fae3-4823-9e6f-0f5306e7248f
 content-type: reference
 topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
-source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: ht
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
 source-wordcount: '1248'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ Document Security 管理員和使用者會建立原則。管理員會建立適�
 * 在原則中指定的有效期限。
 * 直到管理員或套用原則的人撤銷檔案存取權或變更原則為止。
 
-  如果套用原則的人變更原則或撤銷檔案存取權，使用者的檔案權限會變更或移除，即使使用者擁有該檔案也一樣。如果檔案本身被撤銷，使用者可能會收到 URL 以取得更新版本。
+  如果套用原則的人變更原則或撤銷檔案存取權，使用者的檔案權限會變更或移除，即使使用者擁有該檔案也一樣。如果檔案本身被撤銷，使用者可能會收到URL以取得更新版本。
 
   如果原則允許離線存取，則在指定的離線租期內，使用者可以在沒有網際網路或網絡連線情況下，開啟受原則保護的檔案。在離線租期結束時，使用者必須上線並與 Document Security 同步處理，這樣便會展開新的租期。
 
@@ -82,7 +82,7 @@ Document Security 管理員和使用者會建立原則。管理員會建立適�
   </tr>
   <tr>
    <td><p>Patch 更新、技術提示，以及有關此產品版的其他資訊</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/zh-hant?support-solution=General&amp;support-tab=home#support">Experience Cloud 技術支援</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support">Experience Cloud 技術支援</a></p> </td>
   </tr>
  </tbody>
 </table>

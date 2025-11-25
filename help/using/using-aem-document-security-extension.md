@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
-source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
-workflow-type: ht
-source-wordcount: '6136'
-ht-degree: 100%
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
+source-wordcount: '6139'
+ht-degree: 98%
 
 ---
 
@@ -86,14 +86,14 @@ ht-degree: 100%
 
 1. 選取要指定為預設的伺服器，然後按一下「**設定預設**」。預設伺服器旁邊會顯示星號。
 
-### 使用協力驗證服務提供者 {#using-third-party-authentication-providers}
+### 使用第三方驗證服務提供者 {#using-third-party-authentication-providers}
 
-您可以使用有 AEM Forms Document Security 的協力驗證服務提供者。這些驗證服務提供者會幫助您在受保護的文件上另增一個存取層。AEM Forms Document Security 可支援以下的延伸驗證工作流程：
+您可以使用有 AEM Forms Document Security 的第三方驗證服務提供者。這些驗證服務提供者會幫助您在受保護的文件上另增一個存取層。AEM Forms Document Security 可支援以下的延伸驗證工作流程：
 
 * 使用預設的 AEM Forms URL 的延伸驗證
 * 使用自訂 URL 的延伸驗證
-* 透過在 JEE 伺服器 AEM Forms 設定的協力身分識別服務提供者，使用預設延伸驗證工作流程
-* 透過設定在 JEE 伺服器 AEM Forms 的協力身分識別服務提供者，使用自訂延伸驗證工作流程
+* 透過在 JEE 伺服器 AEM Forms 設定的第三方身分識別服務提供者，使用預設延伸驗證工作流程
+* 透過設定在 JEE 伺服器 AEM Forms 的第三方身分識別服務提供者，使用自訂延伸驗證工作流程
 * 使用特訂頁面的延伸驗證，以列出 SAML 驗證
 
 #### 使用預設的 AEM Forms URL 的延伸驗證 {#extended-authentication-using-default-aem-forms-url}
@@ -105,7 +105,7 @@ ht-degree: 100%
 1. 開啟 AEM Forms 管理 UI。
 1. 瀏覽至「服務 > Document Security > 設定 > 伺服器設定」。
 1. 啟用「允許延伸驗證」選項
-1. 指定預設的 URL 延伸驗證登陸 URL。預設 URL 為 http://localhost:8080/edc/extendedauthentication/welcome.jsp。
+1. 指定預設的 URL 延伸驗證登陸 URL。預設URL為http://localhost:8080/edc/extendedauthentication/welcome.jsp。
 
    按一下「**[!UICONTROL 儲存]**」。
 
@@ -142,7 +142,7 @@ ht-degree: 100%
 
    現在，AEM Forms Document Security 設定為透過自訂 AEM Forms 登陸 URL 使用延伸驗證
 
-#### 透過設定在 AEM Forms Server 的協力身分識別服務提供者，使用預設延伸驗證工作流程 {#default-extended-authentication-workflow-with-third-party-identity-providers-configured-on-aem-forms-server}
+#### 透過設定在 AEM Forms Server 的第三方身分識別服務提供者，使用預設延伸驗證工作流程 {#default-extended-authentication-workflow-with-third-party-identity-providers-configured-on-aem-forms-server}
 
 延伸驗證可以使用 AEM Forms Server 上可用的不同類型驗證。例如 SAML，[還有什麼例子]。
 
@@ -373,7 +373,7 @@ Microsoft® Office 適用的 Document Security Extension 會限制 Word、Excel 
 
 您能採用與開啟任何其他檔案相同的方法，開啟受原則保護的檔案。如果您尚未登入 Document Security，系統會提示您登入。也就是說，如果您未連接到網際網路，則可以離線開啟檔案。如果您取消登入程序，您的拒絕就會被拒絕。
 
-如果您沒有開啟檔案的權限，您就會收到存取被拒的通知。如果檔案存取權限被撤銷，系統就會將您導向最新版的檔案 (若有適用版本)。如果無法開啟受原則保護的檔案並需要更多協助，請與檔案發佈者聯絡。
+如果您沒有開啟檔案的權限，您就會收到存取被拒的通知。如果檔案存取許可權被撤銷，系統可能會將您導向最新版的檔案（如果有的話）。 如果無法開啟受原則保護的檔案並需要更多協助，請與檔案發佈者聯絡。
 
 在開啟受保護的檔案時，檔案名稱後的標題列內容會指出該檔案受到 AEM Document Security 的保護。
 
@@ -408,13 +408,13 @@ Microsoft® Office 適用的 Document Security Extension 會限制 Word、Excel 
 
 ### 當啟用自動套用原則時儲存文件 {#saving-documents-when-auto-apply-policy-is-enabled}
 
-如果管理員已啟用「自動套用原則」功能，當您儲存檔案時，您建立或編輯的任何文件皆會自動受到保護。
+如果您的管理員已啟用「自動套用原則」功能，當您儲存檔案時，您建立或編輯的任何檔案都會自動受到保護。
 
-如果啟用自動套用原則，Microsoft® Office 適用的 Document Security Extension 會提示您登入 Document Security 伺服器。輸入您的使用者名稱和密碼，以便伺服器可以對您進行驗證。如果您提供了正確的登入憑證，文件會儲存並受到保護。
+如果啟用自動套用原則，Microsoft® Office適用的Document Security Extension會提示您登入Document Security伺服器。 輸入您的使用者名稱和密碼，以便伺服器可以對您進行驗證。如果您提供了正確的登入憑證，文件會儲存並受到保護。
 
 >[!NOTE]
 >
->如果您無法登入使用 Document Security，則文件可能會或不會儲存；此情形取決於管理員如何設定自動套用原則。向管理員查詢，在這種情況下會如何處理文件。
+>如果您無法登入使用 Document Security，則文件可能會或不會儲存；此情況取決於管理員如何設定自動套用原則。 向管理員查詢，在這種情況下會如何處理文件。
 
 ### 離線存取的同步處理 {#synchronizing-for-offline-access}
 
@@ -772,14 +772,14 @@ Document Security 網頁會開啟至活動頁面，並顯示目前檔案的已�
 
 **線上共同作業** 在受保護工作階段中無法使用。
 
-## 使用協力驗證服務提供者 {#use-third-party-authentication-providers}
+## 使用第三方驗證服務提供者 {#use-third-party-authentication-providers}
 
-您可以使用有 AEM Forms Document Security 的協力驗證服務提供者。這些驗證服務提供者會幫助您在受保護的文件上另增一個存取層。AEM Forms Document Security 可支援以下的延伸驗證工作流程：
+您可以使用有 AEM Forms Document Security 的第三方驗證服務提供者。這些驗證服務提供者會幫助您在受保護的文件上另增一個存取層。AEM Forms Document Security 可支援以下的延伸驗證工作流程：
 
 * 使用預設的 AEM Forms URL 的延伸驗證
 * 使用自訂 URL 的延伸驗證
-* 透過在 JEE 伺服器 AEM Forms 設定的協力身分識別服務提供者，使用預設延伸驗證工作流程
-* 透過設定在 JEE 伺服器 AEM Forms 的協力身分識別服務提供者，使用自訂延伸驗證工作流程
+* 透過在 JEE 伺服器 AEM Forms 設定的第三方身分識別服務提供者，使用預設延伸驗證工作流程
+* 透過設定在 JEE 伺服器 AEM Forms 的第三方身分識別服務提供者，使用自訂延伸驗證工作流程
 * 使用特訂頁面的延伸驗證，以列出 SAML 驗證
 
 ## 字彙表 {#glossary}

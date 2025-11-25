@@ -1,19 +1,19 @@
 ---
-title: 安裝和設定 Microsoft Office 適用的 AEM Document Security Extension
+title: 安裝並設定Microsoft Office適用的AEM Document Security Extension
 description: 此文件會指引您安裝和設定 Microsoft Office 適用的 Adobe Experience Manager Document Security Extension 6.2。
 uuid: 9d7eb6bb-4780-4d82-8657-7c6c6d523af0
 content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-source-git-commit: 69abd3e49fcf79b8bf2a7f344abeeae250b1479f
-workflow-type: ht
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
 source-wordcount: '2845'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
-# 安裝和設定 Microsoft Office 適用的 AEM Document Security Extension{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
+# 安裝並設定Microsoft Office適用的AEM Document Security Extension{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 此文件會指引您安裝和設定 Microsoft Office 適用的 Adobe Experience Manager Document Security Extension。
 
@@ -45,9 +45,9 @@ ht-degree: 100%
 
 停用 McAfee VirusScan 主控台中的「緩衝區溢位保護」選項。如此可確保 Office 應用程式在有安裝 Document Security Extension和 McAfee VirusScan (啟用常駐掃描) 的電腦上順利啟動。這些調整有助於防止任何可能阻礙啟動程序的衝突。
 
-### 解除安裝協力廠商外掛程式 {#uninstall-third-party-plug-ins}
+### 解除安裝第三方外掛程式 {#uninstall-third-party-plug-ins}
 
-Microsoft Office 適用的 AEM Document Security Extension 不支援 Microsoft Office 應用程式適用的協力廠商外掛程式。由於此擴充功能與協力廠商外掛程式有衝突，在安裝 Microsoft Office 適用的 Document Security 以前，請先解除安裝 Microsoft Office 適用的非 Adobe 外掛程式。Adobe 不支援已安裝協力廠商外掛程式的 Microsoft Office 適用的 Document Security。
+Microsoft Office 適用的 AEM Document Security Extension 不支援 Microsoft Office 應用程式適用的第三方外掛程式。由於此擴充功能與第三方外掛程式有衝突，在安裝 Microsoft Office 適用的 Document Security 以前，請先解除安裝 Microsoft Office 適用的非 Adobe 外掛程式。Adobe 不支援已安裝第三方外掛程式的 Microsoft Office 適用的 Document Security。
 
 ## 系統需求 {#system-requirements}
 
@@ -57,13 +57,13 @@ Microsoft Office 適用的 AEM Document Security Extension 不支援 Microsoft O
 
 * 在 Microsoft Windows 11 已安裝 Microsoft Office 2019 Professional Plus 32 位元或 64 位元版本，支援語言為英文、法文、德文、日文、義大利文、西班牙文、巴西葡萄牙文、韓文、簡體中文或繁體中文。
 
-* 32 位元或 64 位元的 Microsoft Windows 10，支援語言為英文、法文、德文、日文、義大利文、西班牙文、巴西葡萄牙文、韓文、簡體中文或繁體中文。
+* 32位元或64位元版的Microsoft Windows 10 — 英文版、法文版、德文版、日文版、義大利文版、西班牙文版、巴西文版、葡萄牙文版、韓文版、簡體中文版和繁體中文版。
 
   **注意：***Microsoft Office 適用的 Document Security Extension 也預期可在 Microsoft Surface 裝置上運作。*
 
 * 32 位元或 64 位元版本的 Office 2016、2019 以及作為 Office 365 一部分所安裝的 Microsoft Office 桌面應用程式，支援語言為英文、法文、德文、日文、義大利文、西班牙文、巴西葡萄牙文、韓文、簡體中文或繁體中文。
 
-  **注意**：*Microsoft Office 適用的 AEM Document Security Extension 不支援 Microsoft Office 應用程式適用的協力廠商外掛程式。由於此擴充功能與協力廠商外掛程式可能有衝突，在安裝 Microsoft Office 適用的 Document Security Extension 以前，必須先解除安裝 Microsoft Office 塵用程式適用的非 Adobe 外掛程式。Adobe 不支援已安裝協力廠商外掛程式的 Microsoft Office 適用的 Document Security Extension。*
+  **注意**：*Microsoft Office 適用的 AEM Document Security Extension 不支援 Microsoft Office 應用程式適用的第三方外掛程式。由於此擴充功能與第三方外掛程式可能有衝突，在安裝 Microsoft Office 適用的 Document Security Extension 以前，必須先解除安裝 Microsoft Office 塵用程式適用的非 Adobe 外掛程式。Adobe 不支援已安裝第三方外掛程式的 Microsoft Office 適用的 Document Security Extension。*
 
 * 1.3 GHz 或更快處理器
 * 2 GB RAM
@@ -73,7 +73,7 @@ Microsoft Office 適用的 AEM Document Security Extension 不支援 Microsoft O
 
 若要使用 Document Security Extension，您可以連線至 Adobe LiveCycle Rights Management ES2 及以上版本，或 AEM 6.0 Forms 或以上版本適用的 Document Security 附加元件。
 
-## 安裝 Microsoft Office 適用的 Document Security Extension {#installing-document-security-extension-for-microsoft-office}
+## 安裝Microsoft Office適用的Document Security Extension {#installing-document-security-extension-for-microsoft-office}
 
 您可以從[下載頁面](download-installer.md)下載安裝程式。您不能直接自訂安裝程式可執行的檔案，但可以互動方式或無訊息模式安裝。若要安裝該軟體，請以管理員身份登入 Windows。
 
@@ -99,7 +99,7 @@ Microsoft Office 適用的 AEM Document Security Extension 不支援 Microsoft O
 
    `msiexec /I DocumentSecurityExtensionforMicrosoftOffice.msi /qn`
 
-## 將安裝程式預先設定為連線至 Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
+## 預先設定安裝程式以連線至Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
 
 您可以為 Microsoft Office 安裝程式預先設定 Document Security Extension 以指向 LiveCycle 或 AEM 伺服器。如此可確保安裝 Microsoft Office 適用的 Document Security Extension 的使用者無需設定連線即可使用這些功能。這樣，使用者無需任何設定即可開啟受保護的文件。但是，除非使用者將客戶端設定為使用特定伺服器，否則他們無法保護新文件。
 
@@ -183,13 +183,13 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 * 使用預設原則保護所有文件。
 * 當使用者無法連線到伺服器時，可讓使用者選擇以不受保護的格式儲存檔案。這種靈活性可讓您解決使用者在無法連線到網絡 (例如在飛機上) 時建立文件的情況。
 
-在啟用自動套用原則功能後，若有以下情況時，可以預設原則來保護文件：
+啟用自動套用原則功能後，在下列情況下，會以預設原則保護檔案：
 
 * 使用者編輯和儲存新建立的文件
 * 使用者編輯和儲存未受保護的文件
 * 使用者開啟以預設文件開啟的應用程式，進行編輯後儲存該文件
 
-### 在 MSI 檔案中設定自動套用原則功能 {#configure-the-auto-apply-policy-feature-in-the-msi-file}
+### 在MSI檔案中設定自動套用的原則功能 {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
 在開始之前，請將安裝程式預先設定為指向您的 LiveCycle 或 AEM Forms Server (如本文前面所述)。
 
@@ -210,12 +210,12 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
-   <td><p>啟用或停用自動套用原則功能。</p> <p><code>1</code>：啟用</p> <p>0：停用</p> </td>
+   <td><p>啟用或停用自動套用的原則功能。</p> <p><code>1</code>：啟用</p> <p>0：停用</p> </td>
    <td><p>0</p> </td>
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
-   <td><p>原則是儲存新文件時要使用的原則 GUID。此值會套用至自動套用原則功能。</p> </td>
+   <td><p>原則是儲存新文件時要使用的原則 GUID。此值適用於「自動套用」原則功能。</p> </td>
    <td><p>在 RM 伺服器所見的十六進位原則 ID</p> </td>
   </tr>
   <tr>
@@ -246,16 +246,16 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
    >
    >使用與原始 MSI 檔案 (例如 `DocumentSecurityExtensionforMicrosoftOffice.msi`) 相同檔案名稱的一般方法。
 
-## 啟用自動保護新文件 {#enabling-automatic-protection-of-new-documents}
+## 啟用自動保護新檔案 {#enabling-automatic-protection-of-new-documents}
 
-管理員可以啟用自動保護使用者所儲存的任何文件的功能。在 Microsoft Office 適用的 Document Security Extension 的安裝程式中，管理員可設定自動套用原則功能。
+管理員可以啟用自動保護使用者所儲存的任何文件的功能。管理員可在Microsoft Office適用的Document Security Extension安裝程式中設定自動套用原則功能。
 
-如果啟用了「自動套用原則」，則使用者儲存的所有文件都將受到預設原則的保護。此操作適用於以下情況：
+如果啟用自動套用原則，則使用者儲存的所有檔案都將受到預設原則的保護。 此操作適用於以下情況：
 
 * 當使用者建立新文件時，可編輯並儲存文件。
 * 當使用者開啟未受保護文件時，可編輯並儲存文件。
 
-若要了解設定自動套用原則的資訊，請參閱「[設定自動套用預設原則](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p)」。
+如需設定自動套用原則的資訊，請參閱[設定自動套用預設原則](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p)。
 
 ## 啟用較少功能區的使用者介面 {#enable-ribbon-less-user-interface}
 
