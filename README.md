@@ -1,16 +1,10 @@
 ---
-source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
+source-git-commit: 2b12d01aa269dd7a38ce067c496462d02a7884b5
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 62%
+source-wordcount: '7'
+ht-degree: 0%
 
 ---
-# Microsoft Office 適用的 AEM Document Security Extension 文件
+# 已封存
 
-Microsoft Office適用的AEM Document Security Extension檔案存放庫。
-
-歡迎您協助撰寫本說明文件。請參閱下列資源：
-
-* [contributing.md](contributing.md) 如何協助撰寫本說明文件的概述。
-* [Guidelines.md](guidelines.md) 預期貢獻內容以及如何協助編寫說明文件的概述。
-* [code-of-conduct.md](code-of-conduct.md)在您協助撰寫本檔案時，Adobe期望的行為標準概述。 專案。
+此存放庫已移轉至<https://github.com/Adobe-Enterprise-Docs/experience-manager-document-security.en>
