@@ -7,10 +7,16 @@ topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
 TQID: https://experienceleague.adobe.com/YnTOBtidvTX9vCQcIiF0IAXWnqCRZDY3YWUgStWVmh0
-product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
 workflow-type: tm+mt
 source-wordcount: 1293
@@ -87,7 +93,7 @@ Document Security 管理員和使用者會建立原則。 管理員會建立適�
   </tr>
   <tr>
    <td><p>Patch 更新、技術提示，以及有關此產品版的其他資訊</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support">Experience Cloud 技術支援</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support">Experience Cloud 技術支援</a></p> </td>
   </tr>
  </tbody>
 </table>
