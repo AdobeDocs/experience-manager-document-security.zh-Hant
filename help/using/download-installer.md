@@ -1,20 +1,28 @@
 ---
-title: 下載 Microsoft® Office 適用的 Adobe Experience Manager Document Security/LiveCycle Rights Management Extension
-description: 使用 Microsoft&reg; Office 軟體適用的 Document Security Extension，防止他人未經授權存取重要檔案。
+title: 下載Microsoft&reg； Office適用的Adobe Experience Manager Document Security/LiveCycle Rights Management Extension
+description: 使用Microsoft&reg； Office軟體適用的Document Security Extension，防止他人未經授權存取重要檔案
 uuid: b4c7d1d1-7eae-4fd3-8282-132c80a976e8
 contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
 exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
-source-git-commit: 265c81b4b424c96e1d53c962af39756ee43c443d
-workflow-type: ht
-source-wordcount: '213'
-ht-degree: 100%
+TQID: https://experienceleague.adobe.com/wWp81LlFGPn-20erOk0FoBilgFkdAlpHAjBqNsNL3nQ
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
+workflow-type: tm+mt
+source-wordcount: 245
+ht-degree: 87%
 
 ---
 
 # 下載 Microsoft® Office 適用的 Adobe Experience Manager Document Security/LiveCycle Rights Management Extension {#download-adobe-experience-manager-document-security-livecycle-rights-management-extension-for-microsoft-office}
 
-使用 Microsoft® Office 軟體適用的 Document Security Extension，您可以維護敏感資訊的機密性。您可以隨時防止他人未經授權存取重要檔案。此防護機制適用於從文件建立至分發整個過程。它還包括歸檔和銷毀，不論檔案如何分發或儲存在何處。
+使用 Microsoft® Office 軟體適用的 Document Security Extension，您可以維護敏感資訊的機密性。 您可以隨時防止他人未經授權存取重要檔案。 此防護機制適用於從文件建立至分發整個過程。 它還包括歸檔和銷毀，不論檔案如何分發或儲存在何處。
 
 >[!NOTE]
 >

@@ -7,9 +7,20 @@ content-type: reference
 topic-tags: using
 discoiquuid: bdc3f174-e417-4d3e-b3af-972cdcc10133
 exl-id: 98f24032-0774-47f8-bcc5-1ee37b417833
-source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: ht
-source-wordcount: '284'
+TQID: https://experienceleague.adobe.com/3YVMcSeYDXCWkVeG8HmlJOgja9OwLqs1gpPWP8rhhs0
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: fd5d26fd-7180-407d-bbd8-5f8a17f9c0b8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
+workflow-type: tm+mt
+source-wordcount: 316
 ht-degree: 100%
 
 ---
@@ -24,15 +35,15 @@ ht-degree: 100%
 
 ### Microsoft Office 應用程式無法載入 Document Security Extension {#document-security-extension-fails-to-load-for-microsoft-office-applications}
 
-Windows 登錄中的 LoadBehavior 屬性會指定 Document Security 外掛程式的執行階段行為。如果 LoadBehavior 屬性設定為 3，則所有外掛程式會自動載入。在安裝 Microsoft Office 適用的 Document Security Extension 以前，請確保將 LoadBehavior 屬性值設定為 3。
+Windows 登錄中的 LoadBehavior 屬性會指定 Document Security 外掛程式的執行階段行為。 如果 LoadBehavior 屬性設定為 3，則所有外掛程式會自動載入。 在安裝 Microsoft Office 適用的 Document Security Extension 以前，請確保將 LoadBehavior 屬性值設定為 3。
 
-1. 在進行變更前，請備份 Windows 登錄。若需要詳細的說明，請參閱 [如何修改 Windows 登錄](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)。
+1. 在進行變更前，請備份 Windows 登錄。 若需要詳細的說明，請參閱 [如何修改 Windows 登錄](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)。
 1. 在「登錄編輯程式」中，瀏覽至 HKEY_CURRENT_USER\Software\Microsoft\Office\Word\Addins\Adobe.DRMIntegration.WordAddin or HKEY_LOCAL_MACHINE\Software\Microsoft\Office\Word\Addins\Adobe.DRM。
 1. 將 **LoadBehavior** 屬性值設定為 3。
 
 1. 關閉登錄編輯程式。
 
-若要了解 LoadBehavior 詳細資訊，請參閱 [VSTO 增益集的登錄項目](https://learn.microsoft.com/en-us/visualstudio/vsto/registry-entries-for-vsto-add-ins?view=vs-2022&amp;redirectedfrom=MSDN#LoadBehavior)文章。
+若要了解 LoadBehavior 詳細資訊，請參閱 [VSTO 增益集的登錄項目](https://learn.microsoft.com/en-us/visualstudio/vsto/registry-entries-for-vsto-add-ins?view=vs-2022&redirectedfrom=MSDN#LoadBehavior)文章。
 
 ## 疑難排解系統管理工作 {#admintasks}
 
