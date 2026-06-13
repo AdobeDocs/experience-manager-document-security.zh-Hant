@@ -116,7 +116,7 @@ ht-degree: 98%
 1. 啟用「允許延伸驗證」選項
 1. 指定預設的 URL 延伸驗證登陸 URL。 預設URL為http://localhost:8080/edc/extendedauthentication/welcome.jsp。
 
-   按一下&#x200B;**[!UICONTROL 儲存]**。
+   按一下「**[!UICONTROL 儲存]**」。
 
    >[!NOTE]
    >
@@ -283,7 +283,7 @@ Word、Excel 和 PowerPoint 檔案不支援在 Document Security 網頁中建立
  </thead>
  <tbody>
   <tr>
-   <td><p>有效期</p></td>
+   <td><p>有效期限</p></td>
    <td><p>支援。</p></td>
   </tr>
   <tr>
